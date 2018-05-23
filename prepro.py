@@ -41,14 +41,14 @@ def build_vocab(refer, params):
 			word2count[wd] = word2count.get(wd, 0) + 1
 
 	# print some stats
-	total_words = sum(word2count.itervalues())
-	print 'total words: %s' % total_words
+	total_words = sum(iter(word2count.values()))
+	print ('total words: %s' % total_words)
 	bad_words = [w for w, n in word2count.items() if n <= count_thr]
 	vocab = [w for w, n in word2count.items() if n > count_thr]
 	bad_count = sum([word2count[w] for w in bad_words])
-	print 'number of good words: %d' % len(vocab)
-	print 'number of bad words: %d/%d = %.2f%%' % (len(bad_words), len(word2count), len(bad_words)*100.0/len(word2count))
-	print 'number of UNKs in sentences: %d/%d = %.2f%%' % (bad_count, total_words, bad_count*100.0/total_words)
+	print ('number of good words: %d' % len(vocab))
+	print ('number of bad words: %d/%d = %.2f%%' % (len(bad_words), len(word2count), len(bad_words)*100.0/len(word2count)))
+	print ('number of UNKs in sentences: %d/%d = %.2f%%' % (bad_count, total_words, bad_count*100.0/total_words))
 
 	# add UNK
 	if bad_count > 0:
@@ -69,13 +69,13 @@ def check_sentLength(sentToFinal):
 		nw = len(tokens)
 		sent_lengths[nw] = sent_lengths.get(nw, 0) + 1
 	max_len = max(sent_lengths.keys())
-	print 'max length of sentence in raw data is %d' % max_len
-	print 'sentence length distribution (count, number of words):'
+	print ('max length of sentence in raw data is %d' % max_len)
+	print ('sentence length distribution (count, number of words):')
 	sum_len = sum(sent_lengths.values())
 	acc = 0  # accumulative distribution
 	for i in range(max_len+1):
 		acc += sent_lengths.get(i, 0)
-		print '%2d: %10d %.3f%% %.3f%%' % (i, sent_lengths.get(i, 0), sent_lengths.get(i, 0)*100.0/sum_len, acc*100.0/sum_len)
+		print ('%2d: %10d %.3f%% %.3f%%' % (i, sent_lengths.get(i, 0), sent_lengths.get(i, 0)*100.0/sum_len, acc*100.0/sum_len))
 
 
 def encode_captions(sentences, wtoi, params):
@@ -131,7 +131,7 @@ def prepare_json(refer, sentToFinal, params):
 		box = refer.refToAnn[ref_id]['bbox']
 		refs += [ {'ref_id': ref_id, 'split': ref['split'], 'category_id': ref['category_id'], 'ann_id': ref['ann_id'],
 		'sent_ids': ref['sent_ids'], 'box': box, 'image_id': ref['image_id']} ]
-	print 'There in all %s refs.' % len(refs)
+	print ('There in all %s refs.' % len(refs))
 
 	# prepare images = [{'image_id', 'width', 'height', 'file_name', 'ref_ids', 'ann_ids', 'h5_id'}]
 	images = []
@@ -144,7 +144,7 @@ def prepare_json(refer, sentToFinal, params):
 		ref_ids = [ref['ref_id'] for ref in refer.imgToRefs[image_id]]
 		ann_ids = [ann['id'] for ann in refer.imgToAnns[image_id]]
 		images += [ {'image_id': image_id, 'height': height, 'width': width, 'file_name': file_name, 'ref_ids': ref_ids, 'ann_ids': ann_ids, 'h5_id': h5_id} ]
-	print 'There are in all %d images.' % h5_id
+	print ('There are in all %d images.' % h5_id)
 
 	# prepare anns appeared in images, anns = [{ann_id, category_id, image_id, box, h5_id}]
 	anns = []
@@ -155,7 +155,7 @@ def prepare_json(refer, sentToFinal, params):
 			h5_id += 1  # lua 1-based
 			ann = refer.Anns[ann_id]
 			anns += [{'ann_id': ann_id, 'category_id': ann['category_id'], 'box': ann['bbox'], 'image_id': image_id, 'h5_id': h5_id}]
-	print 'There are in all %d anns within the %d images.' % (h5_id, len(images))
+	print ('There are in all %d anns within the %d images.' % (h5_id, len(images)))
 
 	# prepare sentences = [{sent_id, tokens}]
 	sentences = []
@@ -163,7 +163,7 @@ def prepare_json(refer, sentToFinal, params):
 	for sent_id, tokens in sentToFinal.items():
 		h5_id = h5_id + 1  # lua 1-based
 		sentences += [{'sent_id': sent_id, 'tokens': tokens, 'sent':  ' '.join(tokens), 'h5_id': h5_id}]
-	print 'There are in all %d sentences to be written into hdf5 file.' % h5_id
+	print ('There are in all %d sentences to be written into hdf5 file.' % h5_id)
 
 	# return
 	return refs, images, anns, sentences
@@ -207,7 +207,7 @@ def main(params):
 			   'ix_to_cat': refer.Cats
 			   }, 
 		open(osp.join('cache/prepro', dataset+'_'+splitBy, params['output_json']), 'w'))
-	print '%s written.' % osp.join('cache/prepro', params['output_json'])
+	print ('%s written.' % osp.join('cache/prepro', params['output_json']))
 
 	# write h5 file which contains /sentences
 	f = h5py.File(osp.join('cache/prepro', dataset+'_'+splitBy, params['output_h5']), 'w')
@@ -215,7 +215,7 @@ def main(params):
 	f.create_dataset("seqz_labels", dtype='uint32', data=seqz_L)
 	f.create_dataset("zseq_labels", dtype='uint32', data=zseq_L)
 	f.close()
-	print '%s writtern.' % osp.join('cache/prepro', params['output_h5'])
+	print ('%s writtern.' % osp.join('cache/prepro', params['output_h5']))
 	# check_encoded_labels(sentences, seqz_L, zseq_L, itow)
 
 
@@ -238,8 +238,8 @@ if __name__ == '__main__':
 	# argparse
 	args = parser.parse_args()
 	params = vars(args) # convert to ordinary dict
-	print 'parsed input parameters:'
-	print json.dumps(params, indent = 2)
+	print ('parsed input parameters:')
+	print (json.dumps(params, indent = 2))
 
 	# call main
 	main(params)

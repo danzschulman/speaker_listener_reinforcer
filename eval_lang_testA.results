@@ -1,0 +1,2127 @@
+{
+  sample_max : 1
+  num_images : -1
+  gpuid : 0
+  write_html : 0
+  split : "testA"
+  verbose : 1
+  beam_size : 1
+  dataset : "refcoco_unc"
+  id : "0"
+  language_eval : 1
+  batch_size : 32
+}
+DataLoader loading data.json: 	cache/prepro/refcoco_unc/data.json	
+vocab size is 1990	
+object category size is 80	
+We have 19994 images.	
+We have 196771 anns.	
+We have 50000 refs.	
+DataLoader loading data.h5: 	cache/prepro/refcoco_unc/data.h5	
+max sequence length in data is 10	
+assigned 3811 refs to split val	
+assigned 1810 refs to split testB	
+assigned 42404 refs to split train	
+assigned 1975 refs to split testA	
+assigned 10834 sents to split val.	
+assigned 5095 sents to split testB.	
+assigned 120624 sents to split train.	
+assigned 5657 sents to split testA.	
+assigned 1500 images to split val	
+assigned 750 images to split testB	
+assigned 16994 images to split train	
+assigned 750 images to split testA	
+FeatLoader loading cache/feats/refcoco_unc/ann_feats.h5	
+FeatLoader loading cache/feats/refcoco_unc/img_feats.h5	
+protos has vis_encoder	
+protos has lm	
+protos has split_emb	
+protos has cca_embedding	
+protos has lang_encoder	
+protos has vis_combiner	
+protos has split_lm	
+protos has we	
+ref_id47: man in blue shirt	
+ref_id109: man on right	
+ref_id110: woman on left	
+ref_id111: black car	
+ref_id112: car on left	
+ref_id382: man in blue	
+ref_id383: middle guy	
+ref_id519: man in blue	
+ref_id520: man in black	
+ref_id525: person in background in background	
+ref_id526: person on left	
+ref_id527: man in red	
+ref_id528: man on right	
+ref_id537: guy in blue shirt	
+ref_id538: white shirt	
+ref_id539: left player	
+ref_id557: guy in red	
+ref_id558: kid	
+ref_id588: baby	
+ref_id589: kid	
+ref_id640: girl	
+ref_id641: blue shirt	
+ref_id732: right player	
+ref_id733: left guy	
+ref_id734: middle player	
+ref_id756: left girl	
+ref_id757: man in black	
+ref_id814: woman	
+ref_id815: man in white	
+ref_id828: man in blue shirt	
+ref_id829: woman in blue shirt	
+ref_id931: man on right	
+evaluating validation performance... 32/-1 (2.522083)	
+ref_id932: woman in middle	
+ref_id933: girl on left	
+ref_id945: man in middle	
+ref_id946: man in white	
+ref_id947: man in white	
+ref_id954: left person	
+ref_id955: right guy	
+ref_id956: blue jacket	
+ref_id1023: guy in back	
+ref_id1024: man in front	
+ref_id1052: man on right	
+ref_id1053: left guy	
+ref_id1152: woman in white	
+ref_id1153: woman on right	
+ref_id1154: boy in blue shirt	
+ref_id1333: woman on right	
+ref_id1334: man on left	
+ref_id1362: left guy	
+ref_id1363: right guy	
+ref_id1371: woman on right	
+ref_id1372: man on left	
+ref_id1406: man in front	
+ref_id1407: man on left	
+ref_id1568: person on bottom right	
+ref_id1569: skier in front	
+ref_id1582: man in black	
+ref_id1583: person in middle	
+ref_id1623: right skier	
+ref_id1624: front skier	
+ref_id1679: middle girl in middle	
+ref_id1680: man on left	
+ref_id1681: middle guy	
+evaluating validation performance... 64/-1 (2.744250)	
+ref_id1682: left guy	
+ref_id1683: woman on right	
+ref_id1684: girl in pink dress	
+ref_id1811: man on right	
+ref_id1812: man in white shirt	
+ref_id1861: woman on right	
+ref_id1862: man on right	
+ref_id1882: man	
+ref_id1883: bride	
+ref_id1977: middle guy	
+ref_id1978: second from left	
+ref_id1979: second from right	
+ref_id1980: second from left	
+ref_id1990: person on right	
+ref_id1991: left guy	
+ref_id2001: player	
+ref_id2002: black shirt	
+ref_id2129: girl in white shirt	
+ref_id2130: guy in white shirt	
+ref_id2131: woman in white shirt	
+ref_id2173: red jacket	
+ref_id2174: guy on right	
+ref_id2256: catcher	
+ref_id2257: umpire	
+ref_id2264: kid	
+ref_id2265: man	
+ref_id2291: left kid	
+ref_id2292: boy on right	
+ref_id2375: man	
+ref_id2376: guy on right	
+ref_id2721: top skier	
+ref_id2722: bottom dog	
+evaluating validation performance... 96/-1 (2.535691)	
+ref_id2767: left person	
+ref_id2768: right guy	
+ref_id2805: catcher	
+ref_id2806: player on right	
+ref_id2807: batter	
+ref_id2981: woman on right	
+ref_id2982: white shirt	
+ref_id3247: woman on left	
+ref_id3248: man on right	
+ref_id3257: man on left	
+ref_id3258: middle girl	
+ref_id3259: girl in middle	
+ref_id3260: second from left	
+ref_id3366: far right guy	
+ref_id3367: left guy	
+ref_id3768: girl on left	
+ref_id3769: girl in red	
+ref_id3772: man on right	
+ref_id3773: man	
+ref_id3805: man in blue shirt	
+ref_id3806: person in back on right	
+ref_id3807: man in white shirt	
+ref_id4002: right guy	
+ref_id4003: front guy	
+ref_id4014: guy on right	
+ref_id4015: boy in blue shirt	
+ref_id4016: left guy	
+ref_id4017: man in front	
+ref_id4089: woman	
+ref_id4090: woman	
+ref_id4101: woman	
+ref_id4102: man	
+evaluating validation performance... 128/-1 (2.634643)	
+ref_id4143: woman in front	
+ref_id4144: bottom left person	
+ref_id4145: man on left	
+ref_id4159: white shirt	
+ref_id4160: man on right	
+ref_id4174: right girl	
+ref_id4175: left girl	
+ref_id4176: far right person	
+ref_id4177: boy on left	
+ref_id4178: woman in front	
+ref_id4187: woman holding baby	
+ref_id4188: boy on right	
+ref_id4190: person in front	
+ref_id4191: woman in black	
+ref_id4192: woman in white	
+ref_id4308: left person	
+ref_id4309: man in middle	
+ref_id4333: man on left	
+ref_id4334: blue shirt	
+ref_id4345: batter	
+ref_id4346: catcher	
+ref_id4347: umpire	
+ref_id4396: man on right	
+ref_id4397: person on right	
+ref_id4461: right guy	
+ref_id4462: middle guy	
+ref_id4463: man on left	
+ref_id4485: girl on right	
+ref_id4486: front person	
+ref_id4487: horse on right	
+ref_id4488: horse on right	
+ref_id4489: left giraffe	
+evaluating validation performance... 160/-1 (2.544179)	
+ref_id4578: woman in white	
+ref_id4579: woman	
+ref_id4580: bottom left corner	
+ref_id4581: right bottom corner	
+ref_id4582: head in front of head	
+ref_id4616: woman	
+ref_id4617: man	
+ref_id4711: right person	
+ref_id4712: left person	
+ref_id4765: batter	
+ref_id4766: catcher	
+ref_id4868: guy in middle	
+ref_id4869: guy on right	
+ref_id4870: man on left	
+ref_id5012: left guy	
+ref_id5118: right guy	
+ref_id5119: man in white shirt	
+ref_id5149: kid	
+ref_id5150: man on left	
+ref_id5170: white dog	
+ref_id5171: left bear	
+ref_id5244: man	
+ref_id5245: woman	
+ref_id5289: woman in black	
+ref_id5290: woman in black	
+ref_id5291: man on right	
+ref_id5292: left person in white shirt	
+ref_id5293: woman in black	
+ref_id5309: person on right cut off	
+ref_id5310: left person	
+ref_id5311: girl	
+ref_id5389: person in back	
+evaluating validation performance... 192/-1 (2.741700)	
+ref_id5390: woman	
+ref_id5550: man in black	
+ref_id5551: woman in white	
+ref_id5552: man in suit	
+ref_id5615: woman on left	
+ref_id5648: woman in green	
+ref_id5649: middle kid	
+ref_id5650: woman on right	
+ref_id5767: catcher	
+ref_id5768: batter	
+ref_id5769: umpire	
+ref_id5776: left couch	
+ref_id5777: couch on right	
+ref_id5782: guy in red	
+ref_id5783: red shirt	
+ref_id5784: player in front	
+ref_id5811: left girl	
+ref_id5812: woman	
+ref_id5923: white bowl	
+ref_id5924: bowl on right	
+ref_id5925: red shirt	
+ref_id5926: top left corner	
+ref_id6042: skier in the middle	
+ref_id6043: skier in yellow	
+ref_id6073: guy in middle	
+ref_id6074: man	
+ref_id6081: man on left	
+ref_id6082: guy on right	
+ref_id6118: umpire	
+ref_id6119: batter	
+ref_id6210: right guy	
+ref_id6211: guy on left	
+evaluating validation performance... 224/-1 (2.499235)	
+ref_id6237: kid	
+ref_id6238: girl in pink	
+ref_id6239: kid in middle	
+ref_id6257: girl	
+ref_id6461: hand	
+ref_id6462: woman	
+ref_id6607: hand on left	
+ref_id6698: batter	
+ref_id6699: kid in red	
+ref_id6799: right person	
+ref_id6800: man	
+ref_id6809: right person	
+ref_id6810: man in blue	
+ref_id6811: catcher	
+ref_id6812: catcher	
+ref_id6956: guy in blue shirt on right	
+ref_id6957: green shirt	
+ref_id6958: red shirt	
+ref_id7045: white shirt	
+ref_id7046: girl in black	
+ref_id7047: girl	
+ref_id7170: umpire	
+ref_id7171: batter	
+ref_id7172: catcher	
+ref_id7211: hand in back	
+ref_id7212: the boy	
+ref_id7249: umpire	
+ref_id7250: catcher	
+ref_id7251: catcher	
+ref_id7377: man in blue shirt	
+ref_id7378: man on right	
+ref_id7379: man on left	
+evaluating validation performance... 256/-1 (2.560751)	
+ref_id7477: girl in black	
+ref_id7478: girl in front	
+ref_id7496: man in red shirt	
+ref_id7497: guy in middle with white shirt	
+ref_id7498: red shirt	
+ref_id7499: red shirt	
+ref_id7568: right guy	
+ref_id7569: white shirt	
+ref_id7570: left guy	
+ref_id7571: woman on left	
+ref_id7572: woman on right	
+ref_id7573: man in blue shirt	
+ref_id7574: man in blue	
+ref_id7575: chair on right	
+ref_id7576: left chair	
+ref_id7608: girl in white	
+ref_id7609: left guy	
+ref_id7610: man on right	
+ref_id7611: man in middle	
+ref_id7612: guy in back	
+ref_id7613: man	
+ref_id7710: far right guy	
+ref_id7711: man in blue shirt	
+ref_id7712: second person from left	
+ref_id7742: man in black shirt	
+ref_id7743: man on left	
+ref_id7851: left guy	
+ref_id7852: catcher	
+ref_id7853: woman on right	
+ref_id7854: right hand	
+ref_id7855: far left person	
+ref_id7856: man in back left	
+evaluating validation performance... 288/-1 (2.749660)	
+ref_id7857: woman in front	
+ref_id7858: girl	
+ref_id7890: left person	
+ref_id7891: man in black	
+ref_id7929: person in black shirt	
+ref_id7930: tennis player	
+ref_id7967: boy in red	
+ref_id7968: girl in green	
+ref_id7969: man on right	
+ref_id7970: man in back	
+ref_id7981: girl on left	
+ref_id7982: boy	
+ref_id8005: batter	
+ref_id8006: umpire	
+ref_id8086: left guy	
+ref_id8087: right person	
+ref_id8088: man in blue	
+ref_id8089: man on bike	
+ref_id8116: girl in white shirt	
+ref_id8117: left guy	
+ref_id8118: player in blue	
+ref_id8119: right red shirt	
+ref_id8214: man on right	
+ref_id8215: second from left	
+ref_id8216: second from right	
+ref_id8217: man on left	
+ref_id8247: man on left	
+ref_id8248: woman in front	
+ref_id8308: left guy	
+ref_id8309: middle player	
+ref_id8310: white shirt	
+ref_id8354: person on right	
+evaluating validation performance... 320/-1 (2.674940)	
+ref_id8355: guy in white	
+ref_id8356: right horse	
+ref_id8357: horse on left	
+ref_id8375: top cake	
+ref_id8376: woman in back	
+ref_id8377: bottom right cup	
+ref_id8378: person on right	
+ref_id8379: man on left	
+ref_id8413: person sitting on right	
+ref_id8414: man on right	
+ref_id8415: man on left	
+ref_id8416: woman in white	
+ref_id8490: man in blue shirt	
+ref_id8491: woman in red	
+ref_id8492: red shirt	
+ref_id8500: red shirt	
+ref_id8501: number 22	
+ref_id8502: guy in white shirt	
+ref_id8685: left guy	
+ref_id8686: kid in white shirt	
+ref_id8687: man on right	
+ref_id8694: left couch	
+ref_id8695: man in suit	
+ref_id8696: man on right	
+ref_id8697: woman in pink	
+ref_id8698: man in black	
+ref_id8699: man in black	
+ref_id8700: left person	
+ref_id8701: man	
+ref_id8758: person on left	
+ref_id8759: person on right	
+ref_id8760: woman in white	
+evaluating validation performance... 352/-1 (2.816551)	
+ref_id8770: woman in blue	
+ref_id8771: woman in red	
+ref_id8772: man in blue shirt	
+ref_id8773: red shirt	
+ref_id8774: guy in blue shirt	
+ref_id8896: girl	
+ref_id8897: girl in red	
+ref_id8898: left guy	
+ref_id8899: man in blue shirt	
+ref_id9238: person on right	
+ref_id9239: man on left	
+ref_id9255: woman	
+ref_id9256: man on left	
+ref_id9493: man	
+ref_id9494: left guy	
+ref_id9509: woman on left	
+ref_id9510: woman in black	
+ref_id9511: man in middle	
+ref_id9532: woman in middle	
+ref_id9533: second from left	
+ref_id9534: left guy	
+ref_id9760: girl in white	
+ref_id9761: man on right	
+ref_id9799: woman in black	
+ref_id9800: man in white shirt	
+ref_id9856: man in white	
+ref_id9857: person sitting on right	
+ref_id9858: girl	
+ref_id9865: blurry guy in white	
+ref_id9866: guy in background	
+ref_id9867: batter	
+ref_id9949: man in background in background	
+evaluating validation performance... 384/-1 (2.463149)	
+ref_id9950: batter	
+ref_id10015: left girl	
+ref_id10016: right kid	
+ref_id10047: coffee cup	
+ref_id10048: left glass	
+ref_id10049: woman	
+ref_id10114: man in black	
+ref_id10115: guy in blue	
+ref_id10136: woman in pink	
+ref_id10137: woman in red	
+ref_id10138: white shirt	
+ref_id10139: left person	
+ref_id10140: man in black with black hat	
+ref_id10141: red shirt	
+ref_id10217: guy in red	
+ref_id10218: red shirt	
+ref_id10219: left guy	
+ref_id10271: left person	
+ref_id10272: person standing in black	
+ref_id10332: batter	
+ref_id10374: right bear	
+ref_id10375: bear on left	
+ref_id10376: girl	
+ref_id10377: kid	
+ref_id10412: left person	
+ref_id10413: right guy	
+ref_id10449: middle guy in black	
+ref_id10450: left girl	
+ref_id10554: man on left	
+ref_id10555: woman	
+ref_id10629: woman on right	
+ref_id10630: man in the middle	
+evaluating validation performance... 416/-1 (2.438550)	
+ref_id10749: man in blue shirt	
+ref_id10750: man on left	
+ref_id10879: woman	
+ref_id10895: woman on right	
+ref_id10896: man in blue shirt	
+ref_id10995: girl in red	
+ref_id10996: left girl	
+ref_id11019: bottom right corner	
+ref_id11020: middle dog	
+ref_id11021: left person	
+ref_id11022: man in black	
+ref_id11023: chair on left	
+ref_id11024: couch on right	
+ref_id11025: girl in middle	
+ref_id11026: left woman	
+ref_id11027: man in black	
+ref_id11032: person in white	
+ref_id11033: right person	
+ref_id11101: right guy	
+ref_id11102: boy in blue shirt	
+ref_id11103: red shirt	
+ref_id11104: boy in red	
+ref_id11159: middle bear	
+ref_id11160: woman on left	
+ref_id11161: woman in front	
+ref_id11203: man in blue shirt	
+ref_id11204: man on right	
+ref_id11205: woman in blue shirt	
+ref_id11224: catcher	
+ref_id11225: batter	
+ref_id11372: hand	
+ref_id11373: man	
+evaluating validation performance... 448/-1 (2.537963)	
+ref_id11409: batter	
+ref_id11410: guy in black shirt	
+ref_id11411: batter	
+ref_id11541: woman in black	
+ref_id11637: woman on left	
+ref_id11638: man on right	
+ref_id11639: man in black shirt	
+ref_id11676: person on left	
+ref_id11677: guy in front	
+ref_id11752: girl on left	
+ref_id11753: girl in middle	
+ref_id11757: man on left	
+ref_id11758: right person	
+ref_id11769: man in front	
+ref_id11770: arm on left	
+ref_id11894: blue shirt	
+ref_id11895: girl in blue	
+ref_id12001: catcher	
+ref_id12002: batter	
+ref_id12023: person on left	
+ref_id12024: man	
+ref_id12025: man in white shirt	
+ref_id12026: second from right	
+ref_id12027: man on right	
+ref_id12028: woman on left	
+ref_id12029: man on left	
+ref_id12030: middle guy	
+ref_id12261: woman on right	
+ref_id12262: right horse	
+ref_id12263: left cow	
+ref_id12357: white shirt	
+ref_id12358: black shirt	
+evaluating validation performance... 480/-1 (2.652977)	
+ref_id12665: man in black shirt right	
+ref_id12666: girl	
+ref_id12719: man on right	
+ref_id12720: middle guy	
+ref_id12721: girl on left	
+ref_id12758: white shirt	
+ref_id12759: man in black	
+ref_id12963: girl on right	
+ref_id12964: man in front	
+ref_id13055: man on left	
+ref_id13056: man on left	
+ref_id13057: woman in white	
+ref_id13087: person in back	
+ref_id13088: man	
+ref_id13209: woman in white	
+ref_id13210: man in blue shirt	
+ref_id13236: bowl of food in front	
+ref_id13237: chair in back	
+ref_id13238: bowl on left	
+ref_id13239: chair on right	
+ref_id13373: black area above the right of the person in the	
+ref_id13374: top left corner	
+ref_id13382: guy in white shirt	
+ref_id13383: player in red	
+ref_id13386: right guy	
+ref_id13387: man on left	
+ref_id13410: table in front	
+ref_id13411: woman on left	
+ref_id13412: girl on right	
+ref_id13439: man on right	
+ref_id13440: man in front	
+ref_id13441: girl in pink	
+evaluating validation performance... 512/-1 (2.878471)	
+ref_id13442: man in blue shirt	
+ref_id13625: boy	
+ref_id13626: girl on left	
+ref_id13627: middle kid	
+ref_id13793: man in blue shirt	
+ref_id13794: woman	
+ref_id13869: woman	
+ref_id13870: left girl	
+ref_id13894: person on left	
+ref_id13895: guy on horse	
+ref_id14024: white area top left corner	
+ref_id14025: left pizza	
+ref_id14026: right pizza	
+ref_id14027: table	
+ref_id14038: white shirt on left	
+ref_id14039: red shirt	
+ref_id14040: chair on left	
+ref_id14041: chair on right	
+ref_id14042: red chair on left	
+ref_id14102: left person	
+ref_id14103: right person	
+ref_id14104: second person from left	
+ref_id14105: middle person	
+ref_id14106: right person	
+ref_id14201: left edge of person	
+ref_id14202: woman	
+ref_id14203: chair on left	
+ref_id14204: chair bottom right	
+ref_id14270: man in front	
+ref_id14271: white shirt	
+ref_id14272: bike on right	
+ref_id14273: motorcycle in middle	
+evaluating validation performance... 544/-1 (2.566948)	
+ref_id14274: catcher	
+ref_id14275: catcher	
+ref_id14276: umpire	
+ref_id14277: left guy	
+ref_id14316: man on left	
+ref_id14317: woman	
+ref_id14352: kid on right	
+ref_id14353: boy in middle	
+ref_id14377: girl on right	
+ref_id14378: girl on left	
+ref_id14379: man in middle	
+ref_id14380: girl on left	
+ref_id14482: woman	
+ref_id14483: man on left	
+ref_id14519: woman on left	
+ref_id14520: man in middle	
+ref_id14521: hand holding phone	
+ref_id14522: man in black	
+ref_id14523: woman in green	
+ref_id14524: woman on left	
+ref_id14601: man in black	
+ref_id14602: left guy	
+ref_id14603: right guy	
+ref_id14694: right guy	
+ref_id14695: guy in air	
+ref_id14755: umpire	
+ref_id14756: catcher	
+ref_id14757: batter	
+ref_id14855: right person	
+ref_id14856: left person	
+ref_id14857: man in blue	
+ref_id14869: man in black	
+evaluating validation performance... 576/-1 (2.561159)	
+ref_id14870: man in front	
+ref_id14883: left guy	
+ref_id14884: kid	
+ref_id14940: white shirt	
+ref_id14941: girl on left	
+ref_id14968: man on left	
+ref_id14969: guy in white	
+ref_id14981: guy in white shirt	
+ref_id14982: man in white	
+ref_id15085: girl in white shirt	
+ref_id15086: man in white	
+ref_id15087: girl in front	
+ref_id15088: table in front of pic	
+ref_id15089: left hand	
+ref_id15092: person on right	
+ref_id15093: girl in pink	
+ref_id15094: man	
+ref_id15253: reflection of the reflection	
+ref_id15254: white shirt	
+ref_id15255: man in middle	
+ref_id15342: woman in blue	
+ref_id15343: man in white	
+ref_id15348: bottom left corner	
+ref_id15349: right person	
+ref_id15366: woman on left	
+ref_id15367: woman in front	
+ref_id15368: woman on right	
+ref_id15369: person in white	
+ref_id15370: person in black jacket	
+ref_id15394: the guy	
+ref_id15432: blue shirt	
+ref_id15433: kid	
+evaluating validation performance... 608/-1 (2.932424)	
+ref_id15555: man on right	
+ref_id15556: man in blue shirt	
+ref_id15563: person on left bottom	
+ref_id15564: man in white	
+ref_id15699: woman	
+ref_id15754: bottom left	
+ref_id15755: man in white	
+ref_id15825: right guy	
+ref_id15826: man on left	
+ref_id15986: man on right	
+ref_id15987: man	
+ref_id16068: white shirt behind fence	
+ref_id16069: tennis player	
+ref_id16077: girl	
+ref_id16078: man on left	
+ref_id16126: left guy	
+ref_id16127: girl on left	
+ref_id16128: second from left	
+ref_id16129: woman in middle	
+ref_id16130: man in black suit	
+ref_id16131: man in front	
+ref_id16200: kid	
+ref_id16201: woman	
+ref_id16425: right player	
+ref_id16426: left player	
+ref_id16543: right person	
+ref_id16544: right person	
+ref_id16545: guy in blue	
+ref_id16566: left person	
+ref_id16567: girl in blue	
+ref_id16568: person in white	
+ref_id16569: person in middle	
+evaluating validation performance... 640/-1 (2.714714)	
+ref_id16636: horse	
+ref_id16732: man on left	
+ref_id16738: middle guy	
+ref_id16739: white shirt	
+ref_id16740: right guy	
+ref_id16741: man on left	
+ref_id16786: bottom right guy	
+ref_id16787: red shirt	
+ref_id16788: man on left	
+ref_id16804: man in blue shirt	
+ref_id16805: woman on left	
+ref_id16892: man on left	
+ref_id16896: top left person	
+ref_id16897: hand on left	
+ref_id16898: person in front	
+ref_id17039: black area to the left of the head	
+ref_id17040: girl	
+ref_id17138: man	
+ref_id17139: woman standing	
+ref_id17322: catcher	
+ref_id17323: umpire	
+ref_id17324: batter	
+ref_id17488: man	
+ref_id17489: girl	
+ref_id17497: black area above the dog	
+ref_id17498: left person	
+ref_id17523: left kid	
+ref_id17524: man standing	
+ref_id17545: left person	
+ref_id17546: man on right	
+ref_id17579: left guy	
+ref_id17580: right guy	
+evaluating validation performance... 672/-1 (2.472956)	
+ref_id17622: catcher	
+ref_id17623: batter	
+ref_id17629: right person	
+ref_id17630: girl	
+ref_id17643: person in blue	
+ref_id17644: girl in red	
+ref_id17715: woman on right	
+ref_id17716: person in black shirt	
+ref_id17717: man in blue shirt	
+ref_id17731: man in back	
+ref_id17732: man on left	
+ref_id17906: man on right	
+ref_id17907: woman	
+ref_id17974: batter	
+ref_id17975: umpire	
+ref_id17976: catcher	
+ref_id17977: batter	
+ref_id17986: right person	
+ref_id17987: boy	
+ref_id18064: woman in white shirt	
+ref_id18065: man in middle	
+ref_id18066: man in blue shirt	
+ref_id18067: right guy	
+ref_id18127: woman in green	
+ref_id18128: woman on left	
+ref_id18162: woman in white	
+ref_id18163: woman on right	
+ref_id18164: man on left	
+ref_id18167: right couch	
+ref_id18168: left guy	
+ref_id18169: couch on right	
+ref_id18170: left couch	
+evaluating validation performance... 704/-1 (2.768657)	
+ref_id18274: man on right	
+ref_id18275: table in front of the man	
+ref_id18276: man in blue shirt	
+ref_id18277: man on right	
+ref_id18278: bottom right corner	
+ref_id18297: right guy	
+ref_id18298: left tie	
+ref_id18325: left guy	
+ref_id18326: right guy	
+ref_id18362: umbrella on left	
+ref_id18363: man on left	
+ref_id18364: pink umbrella	
+ref_id18448: girl in pink	
+ref_id18449: yellow shirt	
+ref_id18488: man on right	
+ref_id18489: man in black	
+ref_id18490: man in blue	
+ref_id18584: white shirt	
+ref_id18585: guy in white shirt	
+ref_id18586: red shirt	
+ref_id18701: guy on left with hat	
+ref_id18702: guy in front with white shirt	
+ref_id18703: right guy	
+ref_id18704: guy in front	
+ref_id18738: left person	
+ref_id18739: man	
+ref_id18740: woman	
+ref_id18798: woman on right	
+ref_id18799: man on right	
+ref_id18800: woman in front of umbrella	
+ref_id18804: top left	
+ref_id18805: guy in white shirt	
+evaluating validation performance... 736/-1 (2.693310)	
+ref_id18806: right of head	
+ref_id18846: right person	
+ref_id18847: man in middle	
+ref_id18888: man in black shirt	
+ref_id18889: right guy	
+ref_id18912: bottom left corner	
+ref_id18913: man	
+ref_id18914: person sitting on right	
+ref_id18931: red car on right	
+ref_id18932: black and white car	
+ref_id18933: blurry person in background in background	
+ref_id18934: person in background in background in black	
+ref_id18935: blurry person in background	
+ref_id18936: guy on right	
+ref_id18937: guy in back right	
+ref_id18938: tennis player	
+ref_id19008: girl	
+ref_id19040: left person	
+ref_id19062: girl	
+ref_id19063: head in front	
+ref_id19064: man on left	
+ref_id19132: right bottom corner	
+ref_id19133: person on left	
+ref_id19134: man on right	
+ref_id19279: bottom left corner	
+ref_id19280: man	
+ref_id19325: girl on right	
+ref_id19326: kid	
+ref_id19327: girl on right	
+ref_id19348: left guy	
+ref_id19349: man on right	
+ref_id19428: left guy	
+evaluating validation performance... 768/-1 (2.912776)	
+ref_id19429: middle guy	
+ref_id19430: right guy	
+ref_id19433: woman in pink	
+ref_id19434: man in back	
+ref_id19448: girl in red	
+ref_id19449: girl on left	
+ref_id19450: girl in red	
+ref_id19451: right guy	
+ref_id19469: girl on right	
+ref_id19470: pizza on right	
+ref_id19471: girl on left	
+ref_id19509: woman in white shirt	
+ref_id19510: man on right	
+ref_id19511: man in front	
+ref_id19512: batter	
+ref_id19513: person in background in background	
+ref_id19514: person on left	
+ref_id19515: person on right	
+ref_id19516: person in back	
+ref_id19517: right skier	
+ref_id19543: woman in red	
+ref_id19634: person in background	
+ref_id19635: kid	
+ref_id19684: man	
+ref_id19685: woman	
+ref_id19686: girl in pink	
+ref_id19687: man on right	
+ref_id19688: woman in middle	
+ref_id19732: woman	
+ref_id19733: man	
+ref_id19743: woman	
+ref_id19744: right cake	
+evaluating validation performance... 800/-1 (2.313714)	
+ref_id19745: white cake	
+ref_id19746: left arm	
+ref_id19843: bottom left hand	
+ref_id19844: left guy	
+ref_id19901: second from right	
+ref_id19902: left person	
+ref_id19903: second from left	
+ref_id19904: third from left	
+ref_id19941: man in red	
+ref_id19942: woman on left	
+ref_id20041: woman on left	
+ref_id20042: woman on right	
+ref_id20099: laptop on left	
+ref_id20100: middle laptop	
+ref_id20101: man on right	
+ref_id20102: bottom left corner	
+ref_id20103: man in black shirt	
+ref_id20246: man on left	
+ref_id20247: woman	
+ref_id20268: man	
+ref_id20269: kid	
+ref_id20311: pizza on right	
+ref_id20312: pizza in front	
+ref_id20313: pizza in middle	
+ref_id20314: person in back	
+ref_id20315: man in blue shirt	
+ref_id20389: left guy	
+ref_id20390: kid	
+ref_id20420: man on right	
+ref_id20421: man on left	
+ref_id20454: man in back	
+ref_id20455: hand	
+evaluating validation performance... 832/-1 (2.485122)	
+ref_id20469: left girl	
+ref_id20470: man in middle	
+ref_id20471: woman on right	
+ref_id20479: white shirt	
+ref_id20480: man on bike	
+ref_id20505: girl	
+ref_id20506: woman on left	
+ref_id20512: man on left	
+ref_id20513: right guy	
+ref_id20514: girl in blue	
+ref_id20602: groom	
+ref_id20603: bride	
+ref_id20649: man on right	
+ref_id20650: man in black	
+ref_id20663: person in front	
+ref_id20664: left guy	
+ref_id20665: person on right	
+ref_id20666: middle person	
+ref_id20667: right person	
+ref_id20668: bottom left of chair	
+ref_id20755: black bag in back	
+ref_id20756: right side of person in blue	
+ref_id20757: left black bag	
+ref_id20791: baby	
+ref_id20792: left kid	
+ref_id20875: left guy	
+ref_id20876: man on right	
+ref_id20877: woman	
+ref_id20938: man in middle	
+ref_id20939: person on right with red hat	
+ref_id20940: giraffe in front	
+ref_id20941: giraffe in back	
+evaluating validation performance... 864/-1 (2.997861)	
+ref_id20942: guy in back	
+ref_id20943: man in black shirt	
+ref_id20944: head in front left	
+ref_id20945: boy in bottom right head in front of head	
+ref_id20946: batter	
+ref_id20947: catcher	
+ref_id20948: umpire	
+ref_id20954: catcher	
+ref_id20977: top left corner	
+ref_id20978: person on right	
+ref_id21019: girl	
+ref_id21020: baby	
+ref_id21081: sheep in middle	
+ref_id21082: right guy	
+ref_id21083: girl	
+ref_id21084: left sheep	
+ref_id21122: girl on left	
+ref_id21123: man on right	
+ref_id21124: man in black	
+ref_id21125: white shirt	
+ref_id21190: left guy	
+ref_id21191: woman	
+ref_id21292: man on right	
+ref_id21293: right side of white thing	
+ref_id21294: middle boat	
+ref_id21295: left tie	
+ref_id21296: person on left	
+ref_id21302: woman in back left	
+ref_id21303: man in front	
+ref_id21410: left girl	
+ref_id21411: right girl	
+ref_id21422: umpire	
+evaluating validation performance... 896/-1 (2.716163)	
+ref_id21423: blue shirt	
+ref_id21424: umpire	
+ref_id21425: left guy	
+ref_id21426: catcher	
+ref_id21433: third snowboard snowboard cane pockets pockets pockets pockets pockets pockets	
+ref_id21434: right snowboard	
+ref_id21435: right person	
+ref_id21436: second from right	
+ref_id21437: third from left	
+ref_id21438: middle guy	
+ref_id21439: second person from left	
+ref_id21440: man on left	
+ref_id21444: right girl	
+ref_id21525: man in the air	
+ref_id21580: man on right	
+ref_id21581: person on left	
+ref_id21607: man in red shirt	
+ref_id21608: man on left	
+ref_id21609: bottom left corner	
+ref_id21616: slice of pizza slice	
+ref_id21617: pizza	
+ref_id21618: hand on left	
+ref_id21619: person on right	
+ref_id21798: hand holding the hand	
+ref_id21799: man	
+ref_id22059: girl in blue	
+ref_id22060: girl on left	
+ref_id22061: boy on right	
+ref_id22062: girl in red	
+ref_id22063: girl in white	
+ref_id22088: girl in pink	
+ref_id22089: left guy	
+evaluating validation performance... 928/-1 (2.687070)	
+ref_id22117: guy in blue shirt on right	
+ref_id22118: red shirt	
+ref_id22475: woman	
+ref_id22476: left	
+ref_id22477: right racket	
+ref_id22504: man on right	
+ref_id22505: left guy	
+ref_id22659: woman on right	
+ref_id22660: left person	
+ref_id22715: woman in black	
+ref_id22716: woman in middle	
+ref_id22717: man on left	
+ref_id22718: woman on right	
+ref_id22796: person in black shirt	
+ref_id22797: white shirt	
+ref_id22798: person on left	
+ref_id22862: white shirt	
+ref_id22863: left player	
+ref_id23015: woman	
+ref_id23016: man	
+ref_id23077: person on left bottom	
+ref_id23078: man	
+ref_id23129: man in red	
+ref_id23130: red shirt	
+ref_id23131: girl in pink	
+ref_id23179: right person	
+ref_id23180: woman	
+ref_id23192: man on left	
+ref_id23193: man on right	
+ref_id23194: man in black	
+ref_id23235: man in white shirt	
+ref_id23236: woman in front	
+evaluating validation performance... 960/-1 (2.385497)	
+ref_id23237: middle girl	
+ref_id23249: man in black shirt	
+ref_id23250: right guy	
+ref_id23251: man on left	
+ref_id23254: left person	
+ref_id23255: man in blue shirt	
+ref_id23256: man in front	
+ref_id23358: catcher	
+ref_id23359: umpire	
+ref_id23410: man in white	
+ref_id23411: man in black shirt	
+ref_id23412: girl in pink	
+ref_id23564: woman	
+ref_id23565: baby	
+ref_id23652: bowl of food in front	
+ref_id23653: woman in middle	
+ref_id23654: woman on right	
+ref_id23857: black area above the table	
+ref_id23863: man in back left	
+ref_id23864: blue shirt	
+ref_id23865: blue shirt	
+ref_id23866: left kid	
+ref_id23890: left guy	
+ref_id23891: woman on right	
+ref_id23910: woman	
+ref_id23911: right person	
+ref_id23919: person on right	
+ref_id23920: person in front	
+ref_id24045: man on right	
+ref_id24046: man in white shirt	
+ref_id24058: woman in front	
+ref_id24059: man in blue shirt	
+evaluating validation performance... 992/-1 (2.423720)	
+ref_id24060: man on right in white shirt	
+ref_id24061: man on right	
+ref_id24062: left guy	
+ref_id24063: woman in red	
+ref_id24064: man on right	
+ref_id24237: woman	
+ref_id24238: baby	
+ref_id24265: left guy	
+ref_id24266: woman in back	
+ref_id24267: man in black	
+ref_id24297: right player	
+ref_id24298: left girl	
+ref_id24320: left guy	
+ref_id24321: man in white shirt	
+ref_id24322: right woman	
+ref_id24323: man on right	
+ref_id24369: blue shirt	
+ref_id24370: left person	
+ref_id24371: red shirt	
+ref_id24381: left guy	
+ref_id24382: right guy	
+ref_id24396: man on right	
+ref_id24397: man on left	
+ref_id24454: left kid	
+ref_id24455: girl	
+ref_id24456: right guy	
+ref_id24491: woman on right	
+ref_id24492: man on left	
+ref_id24493: woman in white	
+ref_id24510: guy in back with hat	
+ref_id24511: person in back	
+ref_id24512: woman in front	
+evaluating validation performance... 1024/-1 (2.640049)	
+ref_id24513: man in middle	
+ref_id24525: second from right	
+ref_id24526: left guy	
+ref_id24527: blue shirt	
+ref_id24891: right hotdog	
+ref_id24892: left hot dog	
+ref_id24893: hand on left	
+ref_id24894: right arm	
+ref_id24895: man on left	
+ref_id24896: person in back with hat	
+ref_id24897: woman in front	
+ref_id24938: left guy	
+ref_id24939: girl	
+ref_id25002: white shirt	
+ref_id25003: man in black	
+ref_id25004: left guy	
+ref_id25077: person in white shirt	
+ref_id25078: man	
+ref_id25334: person on right	
+ref_id25335: man	
+ref_id25359: woman	
+ref_id25360: man	
+ref_id25386: black pants top middle	
+ref_id25387: man in white shirt	
+ref_id25419: batter	
+ref_id25420: batter	
+ref_id25471: right guy	
+ref_id25472: left guy	
+ref_id25546: guy in black shirt on left	
+ref_id25547: person in white shirt	
+ref_id25548: girl in front	
+ref_id25631: woman in front	
+evaluating validation performance... 1056/-1 (2.819130)	
+ref_id25632: woman in front	
+ref_id25753: man on right	
+ref_id25754: yellow shirt	
+ref_id25800: white shirt	
+ref_id25801: left hand	
+ref_id25802: black shirt	
+ref_id25818: umpire	
+ref_id25819: batter	
+ref_id26042: man	
+ref_id26043: woman	
+ref_id26086: woman on right	
+ref_id26087: man in blue shirt	
+ref_id26088: man in black shirt	
+ref_id26089: left guy	
+ref_id26263: left board	
+ref_id26264: red board	
+ref_id26265: man on left	
+ref_id26266: man in black	
+ref_id26267: person in middle	
+ref_id26498: man in white	
+ref_id26499: woman on right	
+ref_id26509: man on right	
+ref_id26510: left kid	
+ref_id26571: left person	
+ref_id26572: right person	
+ref_id26628: batter	
+ref_id26629: umpire	
+ref_id26630: catcher	
+ref_id26631: person on left	
+ref_id26632: man in white shirt	
+ref_id26633: woman in middle	
+ref_id26634: person in back with black shirt	
+evaluating validation performance... 1088/-1 (2.804133)	
+ref_id26684: player in back	
+ref_id26685: player on right	
+ref_id26686: guy in middle	
+ref_id26698: man on left	
+ref_id26699: woman	
+ref_id26744: guy in front	
+ref_id26745: girl on right	
+ref_id26749: chair on right	
+ref_id26750: boy on right	
+ref_id26751: man in back	
+ref_id26752: left chair	
+ref_id26856: right side of pic	
+ref_id26857: left person	
+ref_id26858: head on left	
+ref_id26877: batter	
+ref_id26878: man in black	
+ref_id26977: man in front	
+ref_id26978: person on left	
+ref_id27212: kid	
+ref_id27213: red shirt	
+ref_id27366: left person	
+ref_id27367: bottom sandwich	
+ref_id27368: top part of sandwich	
+ref_id27369: green shirt	
+ref_id27370: man in blue	
+ref_id27447: man on right	
+ref_id27448: person on left	
+ref_id27489: man on left	
+ref_id27490: middle horse	
+ref_id27491: horse on right	
+ref_id27492: guy in white hat	
+ref_id27493: horse on left	
+evaluating validation performance... 1120/-1 (2.590174)	
+ref_id27550: man on right	
+ref_id27551: guy in white shirt	
+ref_id27643: bottom right person	
+ref_id27644: left guy	
+ref_id27684: right guy	
+ref_id27685: man on left	
+ref_id27717: right hand	
+ref_id27718: left hand	
+ref_id27728: man on right	
+ref_id27729: man on right	
+ref_id27775: man	
+ref_id27776: bride	
+ref_id27946: man in white shirt	
+ref_id27947: woman in white	
+ref_id27948: table on left	
+ref_id27949: woman on right	
+ref_id27950: table in front of the picture	
+ref_id27957: person in back	
+ref_id27958: woman	
+ref_id28059: person in front	
+ref_id28060: person on right	
+ref_id28061: front umbrella	
+ref_id28068: left guy	
+ref_id28069: right guy	
+ref_id28070: man in black	
+ref_id28146: girl on left	
+ref_id28147: boy in blue	
+ref_id28386: second from right	
+ref_id28387: person in front of the child	
+ref_id28388: left guy	
+ref_id28389: man	
+ref_id28390: girl	
+evaluating validation performance... 1152/-1 (2.628304)	
+ref_id28414: catcher	
+ref_id28415: batter	
+ref_id28479: left	
+ref_id28480: baby	
+ref_id28761: guy on left	
+ref_id28762: right person	
+ref_id28788: right person	
+ref_id28789: red jacket	
+ref_id28790: man in blue shirt	
+ref_id28791: girl on right	
+ref_id28792: kid	
+ref_id28825: arm on left	
+ref_id28826: the hand in the back	
+ref_id28827: man in front	
+ref_id28874: right guy	
+ref_id28875: boy in blue shirt	
+ref_id29002: left guy	
+ref_id29003: right guy	
+ref_id29017: person on left	
+ref_id29018: right guy	
+ref_id29100: man in blue	
+ref_id29101: right guy	
+ref_id29102: batter	
+ref_id29236: girl	
+ref_id29237: left guy	
+ref_id29341: guy in back right	
+ref_id29342: tennis player	
+ref_id29390: man in blue	
+ref_id29391: man on left	
+ref_id29392: bike on right	
+ref_id29393: bike	
+ref_id29417: left girl	
+evaluating validation performance... 1184/-1 (2.189790)	
+ref_id29418: man	
+ref_id29448: batter	
+ref_id29449: player on right	
+ref_id29536: man in blue shirt	
+ref_id29537: man on left	
+ref_id29538: man in black shirt	
+ref_id29560: right person	
+ref_id29561: man in white	
+ref_id29637: person on far left	
+ref_id29638: person on right	
+ref_id29639: woman in pink	
+ref_id29640: man in middle	
+ref_id29677: person on right	
+ref_id29678: person on left	
+ref_id29811: left guy	
+ref_id29812: man	
+ref_id29882: black shirt	
+ref_id29883: woman	
+ref_id29908: woman	
+ref_id29909: cake with white frosting	
+ref_id29910: kid	
+ref_id29956: person sitting on left	
+ref_id29957: boy in blue	
+ref_id30096: left guy	
+ref_id30097: man in background on right in background	
+ref_id30098: man in white shirt	
+ref_id30099: man in front	
+ref_id30357: middle guy	
+ref_id30358: person on right	
+ref_id30469: man	
+ref_id30470: kid	
+ref_id30495: woman	
+evaluating validation performance... 1216/-1 (3.027125)	
+ref_id30496: man	
+ref_id30516: person on left	
+ref_id30517: woman	
+ref_id30525: man on right	
+ref_id30526: girl	
+ref_id30556: right girl	
+ref_id30557: second from left	
+ref_id30558: girl in red	
+ref_id30559: second from right	
+ref_id30560: girl in middle	
+ref_id30561: left girl	
+ref_id30562: girl in red	
+ref_id30563: second from left	
+ref_id30637: man on right	
+ref_id30638: right laptop	
+ref_id30639: left laptop	
+ref_id30640: left guy	
+ref_id30676: left	
+ref_id30677: man on right	
+ref_id30731: left person	
+ref_id30732: person in black	
+ref_id30769: left guy	
+ref_id30770: player on right	
+ref_id30803: arm on left	
+ref_id30804: girl on right	
+ref_id30805: left guy	
+ref_id30888: hand in background	
+ref_id30889: hand	
+ref_id30959: left person	
+ref_id30960: baby	
+ref_id31198: left board	
+ref_id31199: right bench	
+evaluating validation performance... 1248/-1 (2.400160)	
+ref_id31201: man in blue shirt	
+ref_id31202: person on right	
+ref_id31203: man	
+ref_id31206: woman on right	
+ref_id31207: woman	
+ref_id31356: batter	
+ref_id31357: catcher	
+ref_id31358: batter	
+ref_id31459: left edge of pic	
+ref_id31460: arm on right	
+ref_id31461: man in back	
+ref_id31462: man	
+ref_id31505: catcher	
+ref_id31506: batter	
+ref_id31547: white shirt	
+ref_id31548: woman	
+ref_id31552: left chair	
+ref_id31553: woman in black	
+ref_id31554: girl	
+ref_id31555: couch	
+ref_id31572: man on left	
+ref_id31573: woman on right	
+ref_id31597: right guy	
+ref_id31598: man in white shirt	
+ref_id31599: middle woman	
+ref_id31600: woman in black	
+ref_id31601: man on left	
+ref_id31762: guy in white shirt	
+ref_id31763: red shirt	
+ref_id31764: boy on left	
+ref_id31765: girl in middle	
+ref_id31799: person in black shirt	
+evaluating validation performance... 1280/-1 (2.321225)	
+ref_id31800: right jeans	
+ref_id31816: man on right	
+ref_id31817: middle guy	
+ref_id31818: man on left	
+ref_id31862: person in background	
+ref_id31863: woman	
+ref_id31866: person in background	
+ref_id31867: red	
+ref_id31955: man	
+ref_id31956: girl	
+ref_id32164: left girl	
+ref_id32217: right kid	
+ref_id32218: guy in white	
+ref_id32234: man on right	
+ref_id32235: left guy	
+ref_id32298: kid	
+ref_id32299: man	
+ref_id32432: black bag	
+ref_id32433: blue bag	
+ref_id32508: catcher	
+ref_id32509: batter	
+ref_id32582: woman on left	
+ref_id32583: girl	
+ref_id32584: batter	
+ref_id32585: umpire	
+ref_id32644: right guy	
+ref_id32645: girl	
+ref_id32646: right elephant	
+ref_id32647: left elephant	
+ref_id32804: right guy	
+ref_id32805: man in white shirt	
+ref_id32806: left guy	
+evaluating validation performance... 1312/-1 (2.347444)	
+ref_id32807: man in black	
+ref_id32850: man on right	
+ref_id32851: guy in middle	
+ref_id33044: man in blue shirt	
+ref_id33045: man in blue shirt	
+ref_id33046: woman in white shirt	
+ref_id33056: man on right	
+ref_id33057: middle guy	
+ref_id33058: man on left	
+ref_id33097: man	
+ref_id33098: right guy	
+ref_id33327: couch	
+ref_id33328: man in back	
+ref_id33462: catcher	
+ref_id33463: batter	
+ref_id33599: right guy	
+ref_id33600: man	
+ref_id33622: right person	
+ref_id33623: man on right	
+ref_id33624: girl in middle	
+ref_id33625: girl on left	
+ref_id33631: guy	
+ref_id33632: left person	
+ref_id33633: catcher	
+ref_id33634: batter	
+ref_id33696: bottom left donut	
+ref_id33697: hand	
+ref_id33698: white shirt	
+ref_id33819: man in blue shirt	
+ref_id33820: girl on right	
+ref_id33821: woman on left	
+ref_id33822: man in black	
+evaluating validation performance... 1344/-1 (2.611523)	
+ref_id33922: blue bag	
+ref_id33923: man in black	
+ref_id33924: black car	
+ref_id33925: person on right	
+ref_id33926: woman in middle	
+ref_id33990: girl	
+ref_id33991: right girl	
+ref_id34093: person on right	
+ref_id34094: woman in green	
+ref_id34095: woman in black	
+ref_id34221: left person	
+ref_id34222: man in front	
+ref_id34389: woman in green	
+ref_id34390: man in blue	
+ref_id34391: left person	
+ref_id34443: girl in middle	
+ref_id34444: girl in white	
+ref_id34445: woman on right	
+ref_id34463: left person	
+ref_id34464: right guy	
+ref_id34478: man in middle	
+ref_id34479: left guy	
+ref_id34480: girl in red	
+ref_id34481: man in black shirt	
+ref_id34655: man on right	
+ref_id34656: left person	
+ref_id34659: left person	
+ref_id34660: girl in pink	
+ref_id34661: girl	
+ref_id34708: person on right in blue	
+ref_id34709: person in white shirt	
+ref_id34710: person in white under umbrella under umbrella	
+evaluating validation performance... 1376/-1 (2.924143)	
+ref_id34711: person in middle	
+ref_id34712: woman in white	
+ref_id34713: girl in front of girl	
+ref_id34716: middle guy	
+ref_id34717: man on right	
+ref_id34718: person on right	
+ref_id34719: left guy	
+ref_id34743: woman on right	
+ref_id34744: left guy	
+ref_id34745: man in suit	
+ref_id34879: batter	
+ref_id34880: catcher	
+ref_id35066: left kid	
+ref_id35067: girl on right	
+ref_id35100: kid	
+ref_id35101: kid	
+ref_id35172: right person	
+ref_id35206: man in black shirt	
+ref_id35207: person in background second from left	
+ref_id35208: green shirt	
+ref_id35209: woman in green	
+ref_id35268: woman in black	
+ref_id35269: woman on left	
+ref_id35305: woman	
+ref_id35306: man	
+ref_id35319: man in black	
+ref_id35320: right side of couch	
+ref_id35331: man in white shirt	
+ref_id35332: white shirt	
+ref_id35333: person on right	
+ref_id35407: person on left	
+ref_id35408: woman on right	
+evaluating validation performance... 1408/-1 (2.637162)	
+ref_id35409: woman	
+ref_id35410: umbrella on right	
+ref_id35411: top left corner	
+ref_id35615: girl in red	
+ref_id35616: man in blue shirt	
+ref_id35654: left dog	
+ref_id35655: blue jeans	
+ref_id35656: left hand	
+ref_id35657: baby	
+ref_id35710: man on right	
+ref_id35711: woman in front	
+ref_id35739: girl	
+ref_id35740: man	
+ref_id35786: girl	
+ref_id35787: girl	
+ref_id35794: left guy	
+ref_id35795: right girl	
+ref_id35837: woman in middle	
+ref_id35848: left guy	
+ref_id35849: person on right	
+ref_id35850: middle kid	
+ref_id35851: girl on right	
+ref_id35965: woman in black	
+ref_id35966: man	
+ref_id35970: man in front	
+ref_id35975: left guy	
+ref_id35976: man in blue	
+ref_id36051: woman	
+ref_id36052: baby	
+ref_id36160: batter	
+ref_id36161: catcher	
+ref_id36162: umpire	
+evaluating validation performance... 1440/-1 (2.806729)	
+ref_id36426: adult	
+ref_id36427: baby	
+ref_id36545: girl in white	
+ref_id36546: man in middle	
+ref_id36691: woman on left	
+ref_id36692: man on right	
+ref_id36693: woman in black	
+ref_id36694: man in white shirt	
+ref_id36779: woman	
+ref_id36780: man	
+ref_id36880: woman in background top right	
+ref_id36881: tennis player	
+ref_id36911: right guy	
+ref_id36912: woman on left	
+ref_id36913: man in middle	
+ref_id36928: left edge of pic	
+ref_id36929: girl	
+ref_id36930: woman on right	
+ref_id36931: baby	
+ref_id36993: batter	
+ref_id36994: umpire	
+ref_id36999: right person	
+ref_id37000: man on left	
+ref_id37032: umpire	
+ref_id37033: batter	
+ref_id37066: woman	
+ref_id37067: man	
+ref_id37125: man on right	
+ref_id37126: man on left	
+ref_id37250: red shirt	
+ref_id37251: girl	
+ref_id37286: girl in blue	
+evaluating validation performance... 1472/-1 (2.498926)	
+ref_id37287: right guy	
+ref_id37288: man on left	
+ref_id37431: person in back	
+ref_id37432: man	
+ref_id37472: left person	
+ref_id37473: hand on right	
+ref_id37478: man in suit	
+ref_id37479: woman	
+ref_id37598: man on right	
+ref_id37599: man in blue shirt	
+ref_id37600: man in black shirt	
+ref_id37756: kid	
+ref_id37757: girl	
+ref_id37800: baby	
+ref_id37801: man	
+ref_id37815: woman	
+ref_id37816: man in blue shirt	
+ref_id37883: guy on left	
+ref_id37884: man in front	
+ref_id37974: right guy	
+ref_id37975: left guy	
+ref_id38214: pink dress	
+ref_id38215: man on right	
+ref_id38216: middle person	
+ref_id38227: person in the middle	
+ref_id38228: woman in red	
+ref_id38274: man on left	
+ref_id38275: man in white	
+ref_id38276: person on right	
+ref_id38340: man in blue shirt	
+ref_id38341: white shirt	
+ref_id38390: man in middle	
+evaluating validation performance... 1504/-1 (2.297465)	
+ref_id38391: woman on left	
+ref_id38392: man on right	
+ref_id38417: right guy	
+ref_id38418: middle guy	
+ref_id38419: left guy	
+ref_id38446: man on right	
+ref_id38447: middle guy	
+ref_id38448: second guy from left	
+ref_id38449: left guy	
+ref_id38504: left guy	
+ref_id38505: guy in back	
+ref_id38506: man in front	
+ref_id38544: right guy	
+ref_id38545: left woman	
+ref_id38546: chair bottom left	
+ref_id38547: chair on right	
+ref_id38587: middle guy	
+ref_id38588: boy on right	
+ref_id38589: person in background on left	
+ref_id38650: man on left	
+ref_id38651: woman on right	
+ref_id38654: left person	
+ref_id38655: man on right	
+ref_id38656: woman in blue	
+ref_id38742: red shirt	
+ref_id38743: man in white shirt	
+ref_id38744: woman in front	
+ref_id38815: man on right	
+ref_id38816: man on left	
+ref_id38856: guy on bike	
+ref_id38857: woman in red	
+ref_id38938: person on left	
+evaluating validation performance... 1536/-1 (2.692731)	
+ref_id38939: woman	
+ref_id39139: blue shirt	
+ref_id39140: red shirt	
+ref_id39141: man in front	
+ref_id39142: man on right	
+ref_id39180: man on right	
+ref_id39181: man on right	
+ref_id39182: man in middle	
+ref_id39183: man in white shirt	
+ref_id39298: man on right	
+ref_id39299: man in white shirt	
+ref_id39406: person in background	
+ref_id39407: man	
+ref_id39550: black shirt	
+ref_id39551: right laptop	
+ref_id39552: middle laptop	
+ref_id39553: person on right	
+ref_id39554: laptop on left	
+ref_id39555: hand on left	
+ref_id39593: man in white shirt	
+ref_id39594: red shirt	
+ref_id39595: left player	
+ref_id39596: white shirt	
+ref_id39597: red shirt	
+ref_id39598: man in black	
+ref_id39599: boy in blue	
+ref_id39600: girl in blue	
+ref_id39635: left guy	
+ref_id39636: man	
+ref_id39644: person on right	
+ref_id39645: woman	
+ref_id39646: white car in back	
+evaluating validation performance... 1568/-1 (2.827009)	
+ref_id39755: baby	
+ref_id39756: top	
+ref_id39839: man in black shirt	
+ref_id39875: girl in back	
+ref_id39876: woman on right	
+ref_id39877: baby	
+ref_id39909: right person	
+ref_id39910: man in blue	
+ref_id39929: woman on left	
+ref_id39930: woman on right	
+ref_id39931: woman in pink	
+ref_id40011: person in back	
+ref_id40012: boy in blue	
+ref_id40013: person in black shirt on right	
+ref_id40122: player in white	
+ref_id40123: catcher	
+ref_id40174: man in white	
+ref_id40175: woman on left	
+ref_id40313: woman in black	
+ref_id40314: person on right	
+ref_id40315: man in blue shirt	
+ref_id40316: woman on left	
+ref_id40348: woman in black	
+ref_id40349: girl on left	
+ref_id40374: man in middle	
+ref_id40375: girl in white	
+ref_id40376: girl on left	
+ref_id40390: left player	
+ref_id40391: man in black	
+ref_id40496: right slice	
+ref_id40497: person on left	
+ref_id40498: top right pizza	
+evaluating validation performance... 1600/-1 (2.556339)	
+ref_id40499: girl on left	
+ref_id40567: man in white shirt	
+ref_id40568: left guy	
+ref_id40601: left person in blue	
+ref_id40602: person in front	
+ref_id40603: person on right	
+ref_id40633: guy sitting on left	
+ref_id40634: batter	
+ref_id40635: guy in back	
+ref_id40695: blurry person behind fence	
+ref_id40696: right guy	
+ref_id40725: batter	
+ref_id40726: catcher	
+ref_id40808: man in front	
+ref_id40809: woman in middle	
+ref_id40856: woman	
+ref_id40857: right guy	
+ref_id40864: woman on left	
+ref_id40865: girl in middle	
+ref_id40866: woman on right	
+ref_id40878: black thing behind the one	
+ref_id40879: black table	
+ref_id40880: man on right	
+ref_id40881: woman on left	
+ref_id41067: man in blue	
+ref_id41068: man in front	
+ref_id41212: right guy	
+ref_id41213: right banana	
+ref_id41214: left person	
+ref_id41215: middle guy	
+ref_id41296: man on left	
+ref_id41297: man in front	
+evaluating validation performance... 1632/-1 (2.825343)	
+ref_id41457: man	
+ref_id41458: woman	
+ref_id41478: left person	
+ref_id41479: woman	
+ref_id41679: woman in red hat	
+ref_id41680: man in blue shirt	
+ref_id41681: left woman	
+ref_id41705: elephant on left	
+ref_id41706: elephant on right	
+ref_id41707: elephant in front	
+ref_id41708: baby	
+ref_id41709: girl on left	
+ref_id41812: right	
+ref_id41889: woman on left	
+ref_id41890: woman on right	
+ref_id41899: person on left	
+ref_id41900: man in white	
+ref_id42074: woman on right	
+ref_id42075: bottle on left	
+ref_id42076: middle person in white	
+ref_id42077: wine bottle on left	
+ref_id42078: woman in white	
+ref_id42079: man on left	
+ref_id42080: kid in red	
+ref_id42189: blue shirt	
+ref_id42190: guy	
+ref_id42208: white shirt	
+ref_id42209: man on left	
+ref_id42257: blue shirt	
+ref_id42258: man on right	
+ref_id42369: man on right	
+ref_id42370: man in black	
+evaluating validation performance... 1664/-1 (2.535068)	
+ref_id42635: girl	
+ref_id42636: man	
+ref_id42678: man on right	
+ref_id42679: girl	
+ref_id42896: woman in front of the center	
+ref_id42897: person in black	
+ref_id43003: man on right	
+ref_id43004: table in front of the table	
+ref_id43005: man on left	
+ref_id43088: woman	
+ref_id43089: man	
+ref_id43150: man in blue	
+ref_id43151: left person	
+ref_id43152: man on right	
+ref_id43153: person in black shirt	
+ref_id43162: right guy	
+ref_id43175: white motorcycle on right	
+ref_id43176: blue shirt	
+ref_id43177: guy in front	
+ref_id43178: guy on bike	
+ref_id43179: bike on left	
+ref_id43180: bike in middle	
+ref_id43181: white bike on right	
+ref_id43261: bottom	
+ref_id43262: left person	
+ref_id43263: baby	
+ref_id43264: baby	
+ref_id43288: blue chair	
+ref_id43289: woman in white shirt	
+ref_id43290: girl on right	
+ref_id43291: woman on left	
+ref_id43292: chair in middle	
+evaluating validation performance... 1696/-1 (2.760941)	
+ref_id43298: girl on right	
+ref_id43299: man in middle	
+ref_id43300: man in blue	
+ref_id43311: guy in black	
+ref_id43312: man in black	
+ref_id43313: left girl	
+ref_id43314: right girl	
+ref_id43315: hand on left	
+ref_id43316: left person	
+ref_id43317: right glass	
+ref_id43318: glass in the back right	
+ref_id43319: person in back right	
+ref_id43320: yellow glass above beer juice skeptic skeptic skeptic skeptic skeptic	
+ref_id43341: white car	
+ref_id43342: red shirt	
+ref_id43343: person on right	
+ref_id43344: car on left	
+ref_id43379: left person	
+ref_id43380: man	
+ref_id43535: man in front	
+ref_id43536: person on left	
+ref_id43537: right person	
+ref_id43538: left person in black	
+ref_id43539: man in black	
+ref_id43647: left bear	
+ref_id43648: woman	
+ref_id43944: right guy	
+ref_id43945: man in white	
+ref_id43948: person on right	
+ref_id43949: man	
+ref_id43996: red shirt	
+ref_id44027: guy on left	
+evaluating validation performance... 1728/-1 (2.703432)	
+ref_id44028: tennis player	
+ref_id44050: right guy	
+ref_id44051: left guy	
+ref_id44052: guy in blue shirt	
+ref_id44357: kid in red	
+ref_id44358: man in blue shirt	
+ref_id44417: blurry person in background	
+ref_id44418: girl	
+ref_id44448: woman	
+ref_id44449: man	
+ref_id44517: man on left	
+ref_id44518: girl in middle	
+ref_id44519: girl on right	
+ref_id44553: woman in green	
+ref_id44554: red shirt	
+ref_id44582: big red elephant	
+ref_id44583: blue shirt	
+ref_id44584: person in black shirt	
+ref_id44628: woman in white shirt	
+ref_id44629: left guy	
+ref_id44630: woman in blue	
+ref_id44633: girl in front	
+ref_id44634: left guy	
+ref_id44635: woman in back right	
+ref_id44642: person on left	
+ref_id44643: man	
+ref_id44644: red jacket	
+ref_id44645: person on left	
+ref_id44699: left guy	
+ref_id44700: hand on right	
+ref_id44714: man on right	
+ref_id44715: left person	
+evaluating validation performance... 1760/-1 (2.650483)	
+ref_id44732: man in front	
+ref_id44733: person on left	
+ref_id44740: front	
+ref_id44741: hand in back	
+ref_id44766: man	
+ref_id45019: batter	
+ref_id45020: umpire	
+ref_id45021: bottom right guy	
+ref_id45046: second from left	
+ref_id45047: far right person	
+ref_id45048: person in middle with white hat	
+ref_id45049: left person	
+ref_id45050: guy on left kneeling	
+ref_id45051: person on right	
+ref_id45052: girl in white shirt	
+ref_id45300: catcher	
+ref_id45301: batter	
+ref_id45340: man on right	
+ref_id45341: woman on left	
+ref_id45342: woman in pink	
+ref_id45358: right person	
+ref_id45359: middle person	
+ref_id45367: man in black suit	
+ref_id45368: girl in black	
+ref_id45369: girl on right	
+ref_id45407: person on bike	
+ref_id45434: man on right	
+ref_id45435: man in red	
+ref_id45436: man in black	
+ref_id45600: person on right	
+ref_id45601: guy on left	
+ref_id45675: middle guy	
+evaluating validation performance... 1792/-1 (2.753218)	
+ref_id45676: man on left	
+ref_id45677: man in black	
+ref_id45837: bottom left person	
+ref_id45838: top left person	
+ref_id45839: woman on right	
+ref_id45840: red shirt	
+ref_id45841: middle guy	
+ref_id45863: right guy	
+ref_id45864: left guy	
+ref_id45865: man in black	
+ref_id45966: left girl	
+ref_id45967: woman	
+ref_id46080: catcher	
+ref_id46081: right player	
+ref_id46165: umpire	
+ref_id46166: catcher	
+ref_id46208: woman in black	
+ref_id46209: woman in front	
+ref_id46210: person in middle	
+ref_id46211: man on left	
+ref_id46285: man in black	
+ref_id46286: red shirt	
+ref_id46321: blue shirt	
+ref_id46322: man on right	
+ref_id46350: person on right in front	
+ref_id46351: woman in white shirt	
+ref_id46352: guy in front with hat	
+ref_id46353: left guy in red	
+ref_id46393: man	
+ref_id46394: arm on right	
+ref_id46403: person in back	
+ref_id46404: right person	
+evaluating validation performance... 1824/-1 (2.723146)	
+ref_id46405: kid in middle	
+ref_id46451: person in background behind woman in background	
+ref_id46452: person in blue shirt on right	
+ref_id46453: woman	
+ref_id46555: woman on right	
+ref_id46556: left hand	
+ref_id46581: man on right	
+ref_id46582: man	
+ref_id46672: person in white shirt	
+ref_id46673: guy in front	
+ref_id46678: man in the middle	
+ref_id46679: middle girl	
+ref_id46680: bottom right corner	
+ref_id46681: woman on right	
+ref_id46682: woman in front	
+ref_id46683: man in front left	
+ref_id46823: man on left	
+ref_id46824: woman	
+ref_id46834: boy in blue	
+ref_id46835: girl in black	
+ref_id46836: person on right in black shirt	
+ref_id46837: girl in white shirt	
+ref_id46838: groom	
+ref_id46839: bride	
+ref_id46880: right person	
+ref_id46881: man	
+ref_id46938: man on right	
+ref_id46939: left guy	
+ref_id46940: empty glass in the middle of the table	
+ref_id46941: glass on left	
+ref_id46949: left guy	
+ref_id46950: man on right	
+evaluating validation performance... 1856/-1 (2.797239)	
+ref_id46951: woman in black	
+ref_id47014: white shirt	
+ref_id47015: left person	
+ref_id47077: man on right	
+ref_id47092: right guy	
+ref_id47093: man in middle	
+ref_id47094: man on left	
+ref_id47164: guy in white shirt	
+ref_id47165: man in white	
+ref_id47319: black shirt	
+ref_id47391: guy on right	
+ref_id47392: chair on right	
+ref_id47393: brown chair	
+ref_id47394: man in front	
+ref_id47441: middle guy	
+ref_id47442: left guy	
+ref_id47443: right guy	
+ref_id47446: guy in blue	
+ref_id47447: guy in front	
+ref_id47519: person in black	
+ref_id47520: person in black	
+ref_id47521: person on right in background	
+ref_id47522: person on left	
+ref_id47566: white truck	
+ref_id47567: person on right	
+ref_id47568: man on left	
+ref_id47569: right car	
+ref_id47682: woman in middle with white shirt	
+ref_id47683: man on right	
+ref_id47684: woman in black	
+ref_id47685: man on left	
+ref_id47686: woman in blue	
+evaluating validation performance... 1888/-1 (2.890606)	
+ref_id47687: man in black suit	
+ref_id47757: man on right	
+ref_id47758: woman	
+ref_id47777: person on right	
+ref_id47778: man on left	
+ref_id47779: man in black	
+ref_id47780: kid in red	
+ref_id47885: right player	
+ref_id47886: left person	
+ref_id47887: right person	
+ref_id47888: left player	
+ref_id47999: middle person	
+ref_id48000: left skier	
+ref_id48001: right person	
+ref_id48006: guy in black	
+ref_id48007: batter	
+ref_id48132: man in blue shirt	
+ref_id48133: person on left	
+ref_id48134: pizza in back	
+ref_id48135: pizza in front	
+ref_id48147: woman	
+ref_id48148: girl on right	
+ref_id48151: catcher	
+ref_id48152: umpire	
+ref_id48153: batter	
+ref_id48201: man in black shirt	
+ref_id48202: man	
+ref_id48304: left person	
+ref_id48305: middle skier	
+ref_id48322: man in white shirt	
+ref_id48323: player on right	
+ref_id48363: man	
+evaluating validation performance... 1920/-1 (2.095327)	
+ref_id48364: woman sitting	
+ref_id48365: woman	
+ref_id48374: man on left	
+ref_id48375: bottom right corner	
+ref_id48473: man on right	
+ref_id48474: man in black	
+ref_id48475: person in front	
+ref_id48476: man on right	
+ref_id48477: middle person	
+ref_id48478: person on left	
+ref_id48571: batter	
+ref_id48572: catcher	
+ref_id48610: girl on right	
+ref_id48611: boy	
+ref_id48705: man in white shirt	
+ref_id48706: woman on right	
+ref_id48707: woman on right	
+ref_id48745: left guy	
+ref_id48746: right guy	
+ref_id48790: man on right	
+ref_id48791: man in white shirt	
+ref_id48983: woman	
+ref_id48984: man	
+ref_id49014: umpire	
+ref_id49015: left guy	
+ref_id49016: batter	
+ref_id49199: guy in black shirt	
+ref_id49200: player on right	
+ref_id49201: guy in black	
+ref_id49312: man on right	
+ref_id49313: boy	
+ref_id49315: person on left	
+evaluating validation performance... 1952/-1 (2.567834)	
+ref_id49316: person in green	
+ref_id49373: left head	
+ref_id49374: person on right in black	
+ref_id49375: man in middle	
+ref_id49457: woman	
+ref_id49458: man	
+ref_id49538: woman on left	
+ref_id49539: man standing	
+ref_id49600: right couch	
+ref_id49601: leg on left	
+ref_id49606: black shirt	
+ref_id49607: batter	
+ref_id49620: far right person	
+ref_id49621: left person	
+ref_id49622: man	
+ref_id49638: guy in back	
+ref_id49639: blue shirt	
+ref_id49747: right woman	
+ref_id49748: woman	
+ref_id49833: woman	
+ref_id49834: woman in black	
+ref_id49932: left guy	
+ref_id49933: right guy	
+evaluating validation performance... 9/-1 (2.186652)	
+loss: 	2.6247698591798	
+loading dataset refcoco into memory...
+creating index...
+index created.
+DONE (t=7.34s)
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 5077, 'reflen': 5386, 'guess': [5077, 3102, 1491, 368], 'correct': [2753, 667, 118, 6]}
+ratio: 0.9426290382471327
+Bleu_1: 0.510
+Bleu_2: 0.321
+Bleu_3: 0.197
+Bleu_4: 0.104
+computing METEOR score...
+METEOR: 0.190
+computing Rouge score...
+ROUGE_L: 0.450
+computing CIDEr score...
+CIDEr: 0.761
+{'Bleu_1': 0.5102308421486887, 'Bleu_2': 0.32129887379591127, 'Bleu_3': 0.19736197227785268, 'Bleu_4': 0.1042114359256237, 'METEOR': 0.19021525966547814, 'ROUGE_L': 0.4496997574220532, 'CIDEr': 0.76083900823870632}
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 16465, 'reflen': 17700, 'guess': [16465, 10378, 5158, 1432], 'correct': [5674, 1030, 154, 7]}
+ratio: 0.9302259887005124
+Bleu_1: 0.320
+Bleu_2: 0.172
+Bleu_3: 0.093
+Bleu_4: 0.044
+computing METEOR score...
+METEOR: 0.110
+computing Rouge score...
+ROUGE_L: 0.270
+computing CIDEr score...
+CIDEr: 0.380
+average (self_sc - max_cross_sc) = 0.447
+62.28% genenerated sentence has higher CIDEr using groud-truth expressions
+{
+  Bleu_1 : 0.51023084214869
+  ROUGE_L : 0.44969975742205
+  Bleu_3 : 0.19736197227785
+  Bleu_4 : 0.10421143592562
+  Bleu_2 : 0.32129887379591
+  METEOR : 0.19021525966548
+  CIDEr : 0.76083900823871
+}
