@@ -4,6 +4,7 @@ require 'rnn'
 require 'nngraph'
 local utils = require 'misc.utils'
 local net_utils = {}
+local t = require 'misc.transforms'
 
 -- take a raw CNN from caffe and perform surgery. Note: VGG-16 SPECIFIC!
 function net_utils.build_cnn(cnn, opt)
@@ -41,9 +42,9 @@ function net_utils.prepro_img(raw_img, on_gpu)
 	-- ship to gpu
 	if on_gpu then img = img:cuda() else img = img:float() end
 	-- subtract vgg mean
-	local vgg_mean = torch.FloatTensor{123.68, 116.779, 103.939}:view(3,1,1) -- in RGB order
-	vgg_mean = vgg_mean:typeAs(img)
-	img:add(-1, vgg_mean:expandAs(img))
+	--local vgg_mean = torch.FloatTensor{123.68, 116.779, 103.939}:view(3,1,1) -- in RGB order
+	--vgg_mean = vgg_mean:typeAs(img)
+	--img:add(-1, vgg_mean:expandAs(img))
 
 	return img
 end
@@ -69,9 +70,9 @@ function net_utils.prepro_ann(raw_ann, on_gpu)
 	if on_gpu then ann_img = ann_img:cuda() else ann_img = ann_img:float() end
 
 	-- subtract vgg mean
-	local vgg_mean = torch.FloatTensor{123.68, 116.779, 103.939}:view(3,1,1) -- in RGB order
-	vgg_mean = vgg_mean:typeAs(ann_img)
-	ann_img:add(-1, vgg_mean:expandAs(ann_img))
+	--local vgg_mean = torch.FloatTensor{123.68, 116.779, 103.939}:view(3,1,1) -- in RGB order
+	--vgg_mean = vgg_mean:typeAs(ann_img)
+	--ann_img:add(-1, vgg_mean:expandAs(ann_img))
 
 	-- feed in to (3, 224, 224) zeros
 	local pad_img = torch.zeros(3, 224, 224):typeAs(ann_img)
@@ -85,6 +86,7 @@ function net_utils.prepro_ann(raw_ann, on_gpu)
 		y2 = y1 + nw - 1
 		pad_img[{ {}, {}, {y1, y2} }] = ann_img
 	end
+    
 	return pad_img
 end
 -- foward input to Normalize(2) to nn.CMul(d) with init_norm
@@ -139,7 +141,8 @@ function net_utils.VisualEncoder(cnn, opt)
 	local init_norm = utils.getopt(opt, 'init_norm', 20)
 	local vis_encoding_size = utils.getopt(opt, 'vis_encoding_size')
 	local vis_drop_out = utils.getopt(opt, 'vis_drop_out')
-	local fc8 = cnn:get(39)
+	--local fc8 = cnn:get(39)
+    local fc8 = cnn:get(14)
 
 	local M = nn.ParallelTable()
 	local dim = 0

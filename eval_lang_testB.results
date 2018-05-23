@@ -1,0 +1,1957 @@
+{
+  sample_max : 1
+  num_images : -1
+  gpuid : 0
+  write_html : 0
+  split : "testB"
+  verbose : 1
+  beam_size : 1
+  dataset : "refcoco_unc"
+  id : "0"
+  language_eval : 1
+  batch_size : 32
+}
+DataLoader loading data.json: 	cache/prepro/refcoco_unc/data.json	
+vocab size is 1990	
+object category size is 80	
+We have 19994 images.	
+We have 196771 anns.	
+We have 50000 refs.	
+DataLoader loading data.h5: 	cache/prepro/refcoco_unc/data.h5	
+max sequence length in data is 10	
+assigned 3811 refs to split val	
+assigned 1810 refs to split testB	
+assigned 42404 refs to split train	
+assigned 1975 refs to split testA	
+assigned 10834 sents to split val.	
+assigned 5095 sents to split testB.	
+assigned 120624 sents to split train.	
+assigned 5657 sents to split testA.	
+assigned 1500 images to split val	
+assigned 750 images to split testB	
+assigned 16994 images to split train	
+assigned 750 images to split testA	
+FeatLoader loading cache/feats/refcoco_unc/ann_feats.h5	
+FeatLoader loading cache/feats/refcoco_unc/img_feats.h5	
+protos has vis_encoder	
+protos has lm	
+protos has split_emb	
+protos has cca_embedding	
+protos has lang_encoder	
+protos has vis_combiner	
+protos has split_lm	
+protos has we	
+ref_id25: car on left	
+ref_id26: car in front of the yellow	
+ref_id27: top cake	
+ref_id28: top middle donut	
+ref_id45: left zebra	
+ref_id46: middle zebra	
+ref_id164: bench in front	
+ref_id165: bottom right corner	
+ref_id166: bench on left	
+ref_id232: pizza in back	
+ref_id233: pizza	
+ref_id234: right cup	
+ref_id235: red cup	
+ref_id259: left banana	
+ref_id260: apple	
+ref_id261: orange on right	
+ref_id262: apple on right	
+ref_id285: second row from right	
+ref_id286: second row from left	
+ref_id287: second row from bottom right	
+ref_id288: middle orange	
+ref_id299: bear on left	
+ref_id300: bear on right	
+ref_id326: right vase	
+ref_id327: vase on left	
+ref_id328: middle vase	
+ref_id360: bottom left glass	
+ref_id361: glass	
+ref_id362: bottle on right	
+ref_id363: bottle on left	
+ref_id364: second bottle from left	
+ref_id435: horse on right	
+evaluating validation performance... 32/-1 (2.422139)	
+ref_id436: left horse	
+ref_id474: train on right	
+ref_id475: train on left	
+ref_id545: right elephant	
+ref_id605: bottom right boat	
+ref_id629: truck	
+ref_id630: left car	
+ref_id668: left bed	
+ref_id669: bed on right	
+ref_id677: bike on right	
+ref_id678: left motorcycle	
+ref_id721: top left food	
+ref_id722: table	
+ref_id837: middle light	
+ref_id838: traffic light on left	
+ref_id855: red bike	
+ref_id856: front bike	
+ref_id923: right most piece	
+ref_id924: left most board	
+ref_id925: right most	
+ref_id926: left board	
+ref_id940: right monitor	
+ref_id941: monitor on right	
+ref_id1155: pizza in back	
+ref_id1156: bottom left pizza	
+ref_id1218: bottom left bunch	
+ref_id1219: top bananas	
+ref_id1227: pizza	
+ref_id1228: top pizza	
+ref_id1256: baby elephant	
+ref_id1257: big elephant	
+ref_id1273: orange on right	
+evaluating validation performance... 64/-1 (2.358857)	
+ref_id1274: orange	
+ref_id1283: horse on left	
+ref_id1339: left fridge	
+ref_id1340: fridge on right	
+ref_id1368: right cow	
+ref_id1644: white truck	
+ref_id1645: white truck	
+ref_id1776: bottom center broccoli	
+ref_id1777: top right bowl	
+ref_id1865: bottom right corner	
+ref_id1866: top middle sandwich	
+ref_id1867: right sandwich	
+ref_id1868: left sandwich	
+ref_id1869: bottom left sandwich	
+ref_id1870: middle sandwich	
+ref_id1871: second from bottom left	
+ref_id2033: elephant on right	
+ref_id2034: elephant	
+ref_id2103: left cake	
+ref_id2104: top right cake	
+ref_id2105: cake in middle	
+ref_id2122: top right donut	
+ref_id2123: second donut from left	
+ref_id2124: bottom left donut	
+ref_id2125: front donut	
+ref_id2126: right donut	
+ref_id2370: top right donut	
+ref_id2371: bottom right donut	
+ref_id2392: big stove	
+ref_id2393: bottom oven	
+ref_id2467: right bus	
+ref_id2468: bus in front	
+evaluating validation performance... 96/-1 (2.631606)	
+ref_id2540: left monitor	
+ref_id2541: right monitor	
+ref_id2576: right piece of food	
+ref_id2577: food in front	
+ref_id2578: glass of the glass in the middle	
+ref_id2579: glass on left	
+ref_id2642: blue chair on right	
+ref_id2643: blue chair top right	
+ref_id2644: top left corner	
+ref_id2692: bike on right	
+ref_id2693: middle bike	
+ref_id2694: second bike from left	
+ref_id2738: bottom row second from right	
+ref_id2739: bottom left book	
+ref_id2857: cat on left	
+ref_id2858: cat on right	
+ref_id2937: left elephant	
+ref_id2938: right elephant	
+ref_id2939: middle elephant	
+ref_id2944: left dog	
+ref_id2945: dog in front of the picture	
+ref_id2946: top left corner	
+ref_id2947: bottom left sandwich	
+ref_id2948: middle sandwich	
+ref_id2949: top right corner	
+ref_id2950: middle sandwich	
+ref_id2960: right side of cake	
+ref_id2961: red	
+ref_id2962: second train from right	
+ref_id2963: right train	
+ref_id3028: plant in back	
+ref_id3029: plant on right	
+evaluating validation performance... 128/-1 (2.383774)	
+ref_id3125: left umbrella	
+ref_id3126: umbrella	
+ref_id3224: second from left	
+ref_id3225: green fruit	
+ref_id3226: left green	
+ref_id3303: left horse	
+ref_id3304: horse in front	
+ref_id3403: bird on right	
+ref_id3404: bird in the middle	
+ref_id3656: top of table	
+ref_id3657: front bed	
+ref_id3844: chair on right	
+ref_id3845: chair in middle	
+ref_id3875: left bear	
+ref_id3876: bear on right	
+ref_id3910: top left suitcase	
+ref_id3911: second suitcase from right	
+ref_id3912: bottom right suitcase	
+ref_id3919: couch on left	
+ref_id3920: right couch	
+ref_id3931: left bottle	
+ref_id3932: bottle	
+ref_id3941: top cake	
+ref_id3942: bottom layer	
+ref_id3950: left bear	
+ref_id3951: white bear on right	
+ref_id3952: middle bear	
+ref_id3954: big bear	
+ref_id3955: little bear	
+ref_id4004: bottom left bag	
+ref_id4005: black bag	
+ref_id4021: sandwich on left	
+evaluating validation performance... 160/-1 (2.587959)	
+ref_id4022: sandwich on right	
+ref_id4072: right bottle	
+ref_id4073: second from left second from right	
+ref_id4074: front right	
+ref_id4075: left jar	
+ref_id4329: left zebra	
+ref_id4330: right zebra	
+ref_id4500: left zebra	
+ref_id4501: right zebra	
+ref_id4724: glass on left	
+ref_id4806: bus on right	
+ref_id4822: black bag	
+ref_id4823: bag on right	
+ref_id4911: left chair	
+ref_id4912: chair in front of the one	
+ref_id4915: top right donut	
+ref_id4916: top left donut	
+ref_id4917: second from right	
+ref_id4918: bottom right donut	
+ref_id4919: bottom left donut	
+ref_id4925: left apple	
+ref_id4926: orange on right	
+ref_id4927: orange on left	
+ref_id4928: orange	
+ref_id4981: banana	
+ref_id4982: carrot on right	
+ref_id4987: car in middle	
+ref_id4988: car in front	
+ref_id5000: top cat	
+ref_id5001: cat on right	
+ref_id5037: bottom right sheep	
+ref_id5038: second sheep from left	
+evaluating validation performance... 192/-1 (2.580992)	
+ref_id5039: front sheep	
+ref_id5040: right giraffe	
+ref_id5041: giraffe on left	
+ref_id5072: right remote	
+ref_id5073: left remote	
+ref_id5074: hot dog in the middle	
+ref_id5075: hot dog in front	
+ref_id5116: top right sandwich	
+ref_id5117: sandwich on left	
+ref_id5178: left slice of pizza	
+ref_id5179: pizza in back	
+ref_id5180: bottom left bowl	
+ref_id5181: top left bowl	
+ref_id5242: left monitor	
+ref_id5243: right monitor	
+ref_id5298: right cow	
+ref_id5299: cow on left	
+ref_id5327: left horse	
+ref_id5328: middle horse	
+ref_id5329: horse on right	
+ref_id5340: middle elephant	
+ref_id5341: left elephant	
+ref_id5491: car on left	
+ref_id5492: white car	
+ref_id5493: yellow car	
+ref_id5521: top left bear	
+ref_id5522: red bear	
+ref_id5523: far right bear	
+ref_id5524: top middle white bear	
+ref_id5525: red bear	
+ref_id5526: left bear	
+ref_id5527: middle bear	
+evaluating validation performance... 224/-1 (2.421898)	
+ref_id5645: toilet on left	
+ref_id5646: toilet on the right	
+ref_id5669: right sheep	
+ref_id5670: left sheep	
+ref_id5694: left chair	
+ref_id5695: right couch	
+ref_id5797: right train	
+ref_id5798: middle train	
+ref_id5809: right sandwich	
+ref_id5810: top left donut	
+ref_id5829: white truck	
+ref_id5830: right truck	
+ref_id5831: left truck	
+ref_id5967: bottom right donut	
+ref_id5968: middle row second from left	
+ref_id5969: middle donut	
+ref_id5970: bottom row second from right	
+ref_id6053: left board	
+ref_id6054: right board	
+ref_id6055: left dog	
+ref_id6056: middle brown bear	
+ref_id6258: left sheep	
+ref_id6259: white sheep in front	
+ref_id6260: right sheep	
+ref_id6278: bottom right	
+ref_id6279: top slice	
+ref_id6280: top left slice	
+ref_id6281: top right sandwich	
+ref_id6282: bottom left carrot	
+ref_id6283: right sandwich	
+ref_id6284: bottom slice	
+ref_id6312: bottom left bowl	
+evaluating validation performance... 256/-1 (2.957477)	
+ref_id6313: top right bowl	
+ref_id6843: clock on right	
+ref_id6844: left clock	
+ref_id6927: left couch	
+ref_id6928: bed	
+ref_id6929: bottom bed	
+ref_id6974: bed	
+ref_id6975: bed on right	
+ref_id7143: top broccoli	
+ref_id7144: broccoli in front	
+ref_id7159: right piece of broccoli	
+ref_id7160: broccoli on the left	
+ref_id7183: left book	
+ref_id7184: right book	
+ref_id7252: left cow	
+ref_id7253: right cow	
+ref_id7268: bottom right corner	
+ref_id7269: bike	
+ref_id7316: bottom left black luggage	
+ref_id7317: right most suitcase	
+ref_id7318: second suitcase from left	
+ref_id7319: second from left suitcase	
+ref_id7636: middle bus	
+ref_id7637: bus on right	
+ref_id7645: right duck	
+ref_id7646: middle duck	
+ref_id7647: left duck	
+ref_id7801: umbrella on left	
+ref_id7802: umbrella on right	
+ref_id7812: left broccoli	
+ref_id7813: broccoli in front	
+ref_id7838: sheep in the middle	
+evaluating validation performance... 288/-1 (2.167155)	
+ref_id7839: left sheep	
+ref_id7840: front sheep	
+ref_id7895: right horse	
+ref_id7896: left horse	
+ref_id7916: right slice	
+ref_id7917: left pizza	
+ref_id8085: left elephant	
+ref_id8128: bear on left	
+ref_id8210: couch on left	
+ref_id8211: couch on right	
+ref_id8352: right screen	
+ref_id8353: monitor on left	
+ref_id8380: top banana	
+ref_id8381: banana in middle	
+ref_id8382: banana on left	
+ref_id8649: right bowl	
+ref_id8650: bowl of food on left	
+ref_id8681: car on right	
+ref_id8729: top donut	
+ref_id8781: white cup	
+ref_id8782: red cup	
+ref_id8788: left cow	
+ref_id8789: cow on left	
+ref_id8790: right cow	
+ref_id8806: top sheep	
+ref_id8807: front sheep	
+ref_id8855: front donut	
+ref_id8856: top right donut	
+ref_id8857: left donut	
+ref_id8858: donut on right	
+ref_id8909: right bike	
+ref_id8910: left bike	
+evaluating validation performance... 320/-1 (2.486112)	
+ref_id9214: bird on right	
+ref_id9215: bottom duck	
+ref_id9216: top duck	
+ref_id9233: bus on right	
+ref_id9234: bus in front	
+ref_id9295: donut on left	
+ref_id9296: front donut	
+ref_id9305: bottom right donut	
+ref_id9306: bottom row second from left	
+ref_id9307: second row from left	
+ref_id9308: middle donut	
+ref_id9423: far left boat	
+ref_id9424: left umbrella	
+ref_id9425: top left umbrella	
+ref_id9426: second boat from right	
+ref_id9446: left plane	
+ref_id9447: plane	
+ref_id9560: giraffe on right	
+ref_id9561: left giraffe	
+ref_id9574: top carrot	
+ref_id9575: carrot in the middle	
+ref_id9576: bottom middle carrot	
+ref_id9598: baby giraffe	
+ref_id9599: giraffe on left	
+ref_id9628: bottom middle light	
+ref_id9629: elephant on left	
+ref_id9630: middle elephant	
+ref_id9631: right elephant	
+ref_id9707: right couch	
+ref_id9708: couch bottom	
+ref_id9836: right horse	
+ref_id9837: left horse	
+evaluating validation performance... 352/-1 (2.681516)	
+ref_id9919: left horse	
+ref_id9920: white horse	
+ref_id9921: front horse	
+ref_id10035: bear in front	
+ref_id10036: bear on left	
+ref_id10110: right hot dog	
+ref_id10111: left hotdog	
+ref_id10239: right elephant	
+ref_id10240: elephant in middle	
+ref_id10241: elephant on left	
+ref_id10380: bike on left	
+ref_id10381: bike	
+ref_id10382: car	
+ref_id10383: white car on right	
+ref_id10601: right bird	
+ref_id10602: left bird	
+ref_id10795: laptop in back	
+ref_id10796: right laptop	
+ref_id10847: cat on right	
+ref_id10907: chair on left	
+ref_id10908: chair in front of the picture	
+ref_id11114: left orange	
+ref_id11115: right orange	
+ref_id11131: truck on right	
+ref_id11132: truck on left	
+ref_id11192: bottom right piece of broccoli	
+ref_id11193: middle piece of broccoli	
+ref_id11281: glass on right	
+ref_id11282: glass in front	
+ref_id11328: left couch	
+ref_id11329: right couch	
+ref_id11330: left couch	
+evaluating validation performance... 384/-1 (2.221218)	
+ref_id11331: right couch	
+ref_id11982: bottom row second from left	
+ref_id11983: bottom left donut	
+ref_id11984: top left donut	
+ref_id11985: top row second from right	
+ref_id11986: top right donut	
+ref_id11987: top row second from right	
+ref_id11988: middle row second from right	
+ref_id11989: second row second from right	
+ref_id11990: second donut from left	
+ref_id11991: second row from left	
+ref_id11992: bottom row second from right	
+ref_id11993: bottom right donut	
+ref_id12041: cow on right	
+ref_id12042: middle cow	
+ref_id12043: left cow	
+ref_id12064: bear on right	
+ref_id12065: bear on left	
+ref_id12066: bear on right	
+ref_id12067: bear on left	
+ref_id12106: bike on left	
+ref_id12107: bike	
+ref_id12134: bottom right donut	
+ref_id12135: top left donut	
+ref_id12136: middle donut	
+ref_id12137: second from bottom row second from right	
+ref_id12138: bottom left donut	
+ref_id12139: middle donut	
+ref_id12140: second from right	
+ref_id12181: right zebra	
+ref_id12182: left zebra	
+ref_id12239: right horse	
+evaluating validation performance... 416/-1 (2.247608)	
+ref_id12240: left horse	
+ref_id12299: right black case	
+ref_id12300: green suitcase	
+ref_id12394: table	
+ref_id12395: table on right	
+ref_id12407: second giraffe from left	
+ref_id12408: right giraffe	
+ref_id12421: left bus	
+ref_id12422: bus on right	
+ref_id12423: middle bus	
+ref_id12464: left bike	
+ref_id12465: bike on right	
+ref_id12466: middle bike	
+ref_id12539: bottom of screen	
+ref_id12540: laptop in back	
+ref_id12681: boat on right	
+ref_id12682: second boat from left	
+ref_id12792: left cow	
+ref_id12793: cow on right	
+ref_id12899: right glass	
+ref_id12900: left glass	
+ref_id12901: middle glass	
+ref_id12902: second glass from right	
+ref_id12983: right giraffe	
+ref_id12984: left giraffe	
+ref_id13072: right bus	
+ref_id13073: left bus	
+ref_id13080: bear on right	
+ref_id13081: black bear	
+ref_id13100: middle brown	
+ref_id13101: left bear	
+ref_id13110: middle donut	
+evaluating validation performance... 448/-1 (2.503644)	
+ref_id13111: donut in middle	
+ref_id13188: bottom clock	
+ref_id13189: clock on top	
+ref_id13298: bear on right	
+ref_id13299: left bear	
+ref_id13338: middle row second from left	
+ref_id13339: bottom left green	
+ref_id13340: left bowl of apples	
+ref_id13341: bottom middle bowl	
+ref_id13342: bottom right bowl	
+ref_id13343: right bowl	
+ref_id13344: middle row second from right	
+ref_id13345: bottom left bowl	
+ref_id13370: bird in the back right	
+ref_id13371: front bird	
+ref_id13450: bus on right	
+ref_id13451: bus	
+ref_id13459: bike in middle	
+ref_id13460: black bike	
+ref_id13461: bottom right corner	
+ref_id13504: black cow	
+ref_id13505: top cow	
+ref_id13506: top left cow	
+ref_id13511: top of pic	
+ref_id13512: right bike	
+ref_id13520: bus on left	
+ref_id13521: bus on right	
+ref_id13658: middle giraffe	
+ref_id13659: middle giraffe	
+ref_id13708: middle monitor	
+ref_id13768: couch on right	
+ref_id13769: couch on left	
+evaluating validation performance... 480/-1 (2.674938)	
+ref_id13819: left player	
+ref_id13820: right racket	
+ref_id13825: left hand	
+ref_id13826: top left donut	
+ref_id13827: top right donut	
+ref_id13830: bus on left	
+ref_id13831: bus on right	
+ref_id13832: red car	
+ref_id13851: chair on right	
+ref_id13852: chair on left	
+ref_id13871: middle banana	
+ref_id13872: middle banana	
+ref_id13873: bananas on left	
+ref_id13874: top left banana	
+ref_id14098: bottom left sandwich	
+ref_id14099: top left sandwich	
+ref_id14184: bananas in front of bananas	
+ref_id14185: bananas on left	
+ref_id14283: right zebra	
+ref_id14284: left zebra	
+ref_id14470: top clock	
+ref_id14471: bottom right clock	
+ref_id14509: right horse	
+ref_id14510: left horse	
+ref_id14551: books	
+ref_id14552: top book	
+ref_id14652: zebra on right	
+ref_id14653: zebra on left	
+ref_id14665: right bird	
+ref_id14666: left bird	
+ref_id14727: left orange	
+ref_id14728: orange on right	
+evaluating validation performance... 512/-1 (2.815797)	
+ref_id14729: right orange	
+ref_id14730: top apple	
+ref_id14731: left elephant	
+ref_id14732: baby elephant	
+ref_id14733: right elephant	
+ref_id14758: train on right	
+ref_id14759: train on left	
+ref_id14825: top plate	
+ref_id14826: bottom bowl	
+ref_id14846: left meter	
+ref_id14847: right meter	
+ref_id14848: middle fridge	
+ref_id14849: left fridge	
+ref_id14850: right fridge	
+ref_id14942: red couch	
+ref_id14943: couch on right	
+ref_id14944: bear on left	
+ref_id14945: bear on right	
+ref_id14954: giraffe in back	
+ref_id14955: front giraffe	
+ref_id15013: left donut	
+ref_id15014: donut in front	
+ref_id15022: sheep on left	
+ref_id15023: bottom right sheep	
+ref_id15024: top sheep in back	
+ref_id15025: sheep in the middle	
+ref_id15026: sheep in front	
+ref_id15071: top right broccoli	
+ref_id15072: top broccoli	
+ref_id15073: broccoli closest to us	
+ref_id15135: bike on right	
+ref_id15136: bike on left	
+evaluating validation performance... 544/-1 (2.433454)	
+ref_id15241: bottle on right	
+ref_id15242: middle bottle	
+ref_id15306: right sandwich	
+ref_id15307: top right pizza	
+ref_id15308: pizza on left	
+ref_id15309: left half of sandwich	
+ref_id15310: horse on left	
+ref_id15311: horse on right	
+ref_id15318: bike on left	
+ref_id15319: bike	
+ref_id15450: elephant on left	
+ref_id15451: big elephant	
+ref_id15452: big elephant	
+ref_id15469: left elephant	
+ref_id15470: right elephant	
+ref_id15580: meter on right	
+ref_id15581: left meter	
+ref_id15686: pizza on right	
+ref_id15687: pizza	
+ref_id15741: chair in middle	
+ref_id15742: chair on left	
+ref_id15767: bottom slice	
+ref_id15768: top right sandwich	
+ref_id15877: top sandwich	
+ref_id15878: bottom left sandwich	
+ref_id15975: screen in front	
+ref_id15976: left monitor	
+ref_id15977: monitor on right	
+ref_id15984: bottom suitcase	
+ref_id15985: right couch	
+ref_id16044: left dog	
+ref_id16045: black bag	
+evaluating validation performance... 576/-1 (2.122926)	
+ref_id16049: bus on right	
+ref_id16050: bus on left	
+ref_id16051: bus in front	
+ref_id16238: right side of screen	
+ref_id16239: bottom screen	
+ref_id16240: bottom right corner	
+ref_id16241: middle screen	
+ref_id16348: right cow	
+ref_id16349: top right cow	
+ref_id16350: left cow	
+ref_id16389: right bus	
+ref_id16390: bus	
+ref_id16394: bear on left	
+ref_id16395: bear in back	
+ref_id16396: middle bear	
+ref_id16436: left zebra butt	
+ref_id16437: zebra in front	
+ref_id16438: zebra on right	
+ref_id16439: middle zebra	
+ref_id16442: right slice	
+ref_id16465: front boat	
+ref_id16477: chair in middle	
+ref_id16478: chair on right	
+ref_id16479: chair in middle	
+ref_id16480: chair on left	
+ref_id16501: giraffe on right	
+ref_id16502: left giraffe	
+ref_id16503: left giraffe	
+ref_id16528: fridge on left	
+ref_id16529: the fridge	
+ref_id16552: monitor on left	
+ref_id16553: right monitor	
+evaluating validation performance... 608/-1 (2.701544)	
+ref_id16554: left monitor	
+ref_id16555: right screen	
+ref_id16575: right monitor	
+ref_id16576: monitor on the left	
+ref_id16622: right bus	
+ref_id16623: left truck	
+ref_id16642: top right clock	
+ref_id16643: clock on left	
+ref_id16644: clock on right	
+ref_id16653: bear in middle	
+ref_id16654: bear on right	
+ref_id16706: top right	
+ref_id16707: right most vase	
+ref_id16708: bottom left corner	
+ref_id16709: white chair on left	
+ref_id16764: white bear on right	
+ref_id16765: bear in middle	
+ref_id16766: bear in pink	
+ref_id16808: right couch	
+ref_id16809: left bottom corner	
+ref_id16810: right bottle	
+ref_id16811: bottle on left	
+ref_id16812: second bottle from right	
+ref_id16813: second bottle from right	
+ref_id16814: second from left	
+ref_id16815: second bottle from left	
+ref_id16816: middle bottle of beer	
+ref_id16911: top hot dog	
+ref_id16912: front hot dog	
+ref_id17021: middle flowers	
+ref_id17022: bottom left	
+ref_id17140: horse on right	
+evaluating validation performance... 640/-1 (2.591802)	
+ref_id17141: left horse	
+ref_id17184: white cake on left	
+ref_id17185: middle row second from bottom	
+ref_id17301: right person	
+ref_id17302: left person	
+ref_id17382: giraffe	
+ref_id17383: giraffe in middle	
+ref_id17427: top boat	
+ref_id17428: boat on left	
+ref_id17429: boat in front	
+ref_id17430: boat in middle	
+ref_id17585: left bed	
+ref_id17586: white bed	
+ref_id17806: middle sheep	
+ref_id17822: chair in middle	
+ref_id17823: chair on left	
+ref_id17830: left bus	
+ref_id17831: right bus	
+ref_id17835: red bike on right	
+ref_id17836: bike on left	
+ref_id17837: second bike from left	
+ref_id17838: bike on right	
+ref_id17894: top left green	
+ref_id17895: red thing in the middle	
+ref_id18051: cup on right	
+ref_id18071: left train	
+ref_id18072: train on right	
+ref_id18129: top left blue	
+ref_id18130: kid on right	
+ref_id18131: top right corner	
+ref_id18143: dog in back	
+ref_id18144: dog on right	
+evaluating validation performance... 672/-1 (2.538569)	
+ref_id18171: car on right	
+ref_id18172: car on left	
+ref_id18281: bird on right	
+ref_id18282: left bird	
+ref_id18295: front plate	
+ref_id18296: top left bowl	
+ref_id18305: right zebra	
+ref_id18306: zebra on left	
+ref_id18443: elephant on left	
+ref_id18444: front elephant	
+ref_id18462: left meter	
+ref_id18463: right meter	
+ref_id18496: left remote	
+ref_id18497: remote in the back	
+ref_id18537: front giraffe	
+ref_id18538: back giraffe	
+ref_id18681: cat on left	
+ref_id18682: cat on right	
+ref_id18698: left sheep	
+ref_id18699: big sheep	
+ref_id18700: sheep in the middle	
+ref_id18726: right sheep	
+ref_id18727: sheep in the middle	
+ref_id18736: top right corner	
+ref_id18737: left pizza	
+ref_id18906: giraffe in front	
+ref_id18907: left giraffe	
+ref_id18927: top left screen	
+ref_id19026: right horse	
+ref_id19027: left horse	
+ref_id19032: top right broccoli	
+ref_id19033: bottom left bowl	
+evaluating validation performance... 704/-1 (2.213446)	
+ref_id19034: top left bowl	
+ref_id19035: bottom right bowl	
+ref_id19125: oranges in the back	
+ref_id19126: orange on left	
+ref_id19127: orange bottom center	
+ref_id19249: yellow car	
+ref_id19250: car on right	
+ref_id19533: book on right	
+ref_id19534: second book from bottom	
+ref_id19535: book in front	
+ref_id19536: book	
+ref_id19589: top banana	
+ref_id19590: left bunch of bananas	
+ref_id19594: chair bottom right	
+ref_id19595: chair on right	
+ref_id19626: bear on left	
+ref_id19627: right bear	
+ref_id19651: left couch	
+ref_id19652: couch on right	
+ref_id19653: red bowl	
+ref_id19654: top right bowl	
+ref_id19655: bottom left bowl	
+ref_id19656: bottom right bowl	
+ref_id19839: chair on right	
+ref_id19840: bench on left	
+ref_id19990: plane in front	
+ref_id19991: left plane	
+ref_id20030: right train	
+ref_id20031: train	
+ref_id20032: left vase	
+ref_id20033: middle vase	
+ref_id20034: right glass	
+evaluating validation performance... 736/-1 (2.375144)	
+ref_id20279: bottom right corner	
+ref_id20280: left cow	
+ref_id20281: big cow	
+ref_id20316: the black bag	
+ref_id20317: bottom right corner	
+ref_id20318: black suitcase on bottom right	
+ref_id20331: white car	
+ref_id20332: red car	
+ref_id20673: bottom suitcase	
+ref_id20674: suitcase in middle	
+ref_id20675: top suitcase	
+ref_id20676: bottom left suitcase	
+ref_id20733: dog on top	
+ref_id20734: dog	
+ref_id20793: car on left	
+ref_id20794: second car from left	
+ref_id20865: red car on right	
+ref_id20866: white truck	
+ref_id20925: red boat	
+ref_id20926: second boat from right	
+ref_id20927: bottom right corner	
+ref_id20981: top right donut	
+ref_id20982: bottom right donut	
+ref_id21023: top left bowl	
+ref_id21024: top right corner	
+ref_id21053: bottom right corner	
+ref_id21054: couch	
+ref_id21162: left sandwich	
+ref_id21163: bottom right corner	
+ref_id21235: middle couch	
+ref_id21236: right couch	
+ref_id21256: right bottle	
+evaluating validation performance... 768/-1 (2.635600)	
+ref_id21257: left bottle	
+ref_id21288: left bed	
+ref_id21289: right bed	
+ref_id21638: middle	
+ref_id21639: left carrot	
+ref_id21716: right bottle	
+ref_id21717: top left bottle	
+ref_id21748: bird on right	
+ref_id21749: left duck	
+ref_id21825: chair on right	
+ref_id21826: chair in front of table	
+ref_id21925: glass of table in back	
+ref_id21926: cup on right	
+ref_id21957: left zebra	
+ref_id21958: right zebra	
+ref_id22022: horse on left	
+ref_id22023: horse on right	
+ref_id22040: keyboard left keyboard bento leftr bleacher bleacher bleacher bleacher kilt	
+ref_id22041: keyboard keyboard rightside keyboard lright lright lright lright lright lright	
+ref_id22042: right screen	
+ref_id22043: monitor in middle	
+ref_id22050: top left pizza	
+ref_id22051: right pizza	
+ref_id22163: middle food	
+ref_id22164: bottom banana	
+ref_id22289: bottom left corner	
+ref_id22290: second boat from bottom	
+ref_id22324: orange in the middle	
+ref_id22325: orange in front	
+ref_id22382: white car on right	
+ref_id22383: white car	
+ref_id22384: white car	
+evaluating validation performance... 800/-1 (2.322114)	
+ref_id22434: top left orange	
+ref_id22435: bottom right orange	
+ref_id22436: orange on left	
+ref_id22437: top left orange	
+ref_id22438: bottom left orange	
+ref_id22473: right train	
+ref_id22474: left bus	
+ref_id22576: chair on left	
+ref_id22577: black chair on right	
+ref_id22596: right giraffe	
+ref_id22597: giraffe on left	
+ref_id22630: right zebra	
+ref_id22656: black bag in middle of the picture	
+ref_id22657: left most suitcase	
+ref_id22658: right seat	
+ref_id22723: apples in middle	
+ref_id22754: bottom right corner	
+ref_id22755: couch	
+ref_id22756: chair in middle	
+ref_id22773: big sheep	
+ref_id22774: right sheep	
+ref_id22859: right side of pic	
+ref_id22860: left blue tie	
+ref_id22861: blue bag	
+ref_id22933: top left vase	
+ref_id22934: vase on right	
+ref_id22935: front vase	
+ref_id22943: blue car	
+ref_id22944: car on right	
+ref_id22945: right book	
+ref_id22946: book	
+ref_id22966: left monitor	
+evaluating validation performance... 832/-1 (2.469736)	
+ref_id22967: monitor on right	
+ref_id23040: bench on left	
+ref_id23041: right of cat	
+ref_id23088: bottom left fruit	
+ref_id23089: top right corner	
+ref_id23090: orange	
+ref_id23091: top left bowl	
+ref_id23092: glass on right	
+ref_id23151: big big big	
+ref_id23152: middle row second from right	
+ref_id23153: second from right	
+ref_id23182: broccoli on right	
+ref_id23183: broccoli bottom right	
+ref_id23184: broccoli in front of broccoli	
+ref_id23185: middle donut	
+ref_id23297: top left carrot	
+ref_id23298: front banana	
+ref_id23313: bottom of picture	
+ref_id23314: top of train	
+ref_id23347: giraffe on right	
+ref_id23362: left animal	
+ref_id23363: right bottom corner	
+ref_id23469: zebra on right	
+ref_id23470: middle zebra	
+ref_id23471: left zebra	
+ref_id23509: left giraffe	
+ref_id23510: right giraffe	
+ref_id23569: second cow from left	
+ref_id23570: middle cow	
+ref_id23571: right cow	
+ref_id23583: bottom left chair	
+ref_id23584: bottom chair	
+evaluating validation performance... 864/-1 (2.941264)	
+ref_id23603: left sandwich	
+ref_id23604: top right sandwich	
+ref_id23659: cat	
+ref_id23660: cat on left	
+ref_id23661: cat on right	
+ref_id23721: left elephant	
+ref_id23722: right elephant	
+ref_id23797: left horse	
+ref_id23798: right horse	
+ref_id23810: second bottle from right	
+ref_id23811: bottle on right	
+ref_id23812: second bottle from right	
+ref_id23813: second bottle from left	
+ref_id23814: bottle on left	
+ref_id23878: top right slice	
+ref_id23879: left slice	
+ref_id23880: left slice of pizza	
+ref_id23881: slice of pizza on right	
+ref_id23882: left suitcase	
+ref_id23883: right suitcase	
+ref_id24098: suitcase on right	
+ref_id24099: second suitcase from left	
+ref_id24120: left cat	
+ref_id24121: right cat	
+ref_id24122: right cat	
+ref_id24123: right bear	
+ref_id24124: left cat	
+ref_id24187: left elephant	
+ref_id24192: chair in middle	
+ref_id24193: left laptop	
+ref_id24194: right chair	
+ref_id24224: book	
+evaluating validation performance... 896/-1 (2.578995)	
+ref_id24225: top right corner	
+ref_id24274: right vase	
+ref_id24275: right vase	
+ref_id24276: second vase from left	
+ref_id24402: red umbrella	
+ref_id24403: red umbrella	
+ref_id24448: left bus	
+ref_id24449: bus	
+ref_id24503: second from left	
+ref_id24504: second from left	
+ref_id24505: left most train	
+ref_id24506: second from left	
+ref_id24523: cat on top	
+ref_id24524: bottom cat	
+ref_id24573: left side of pic	
+ref_id24574: right remote	
+ref_id24588: horse on right	
+ref_id24589: left horse	
+ref_id24604: right umbrella	
+ref_id24605: back of umbrella	
+ref_id24606: left umbrella	
+ref_id24684: cow on right	
+ref_id24685: cow on left	
+ref_id24686: cow on right	
+ref_id24687: bottom right carrot	
+ref_id24688: top left carrot	
+ref_id24778: middle top	
+ref_id24779: bottom right dog	
+ref_id24859: bike on right	
+ref_id24860: bike	
+ref_id24943: middle row	
+ref_id24944: right toilet	
+evaluating validation performance... 928/-1 (2.359311)	
+ref_id24945: middle vase	
+ref_id24946: right toilet	
+ref_id25053: top right light	
+ref_id25054: right blue	
+ref_id25055: middle traffic light	
+ref_id25137: left bowl	
+ref_id25151: dog on left	
+ref_id25152: dog on right	
+ref_id25302: left monitor	
+ref_id25303: right monitor	
+ref_id25313: top right vase	
+ref_id25314: vase on left	
+ref_id25336: top book	
+ref_id25342: horse in front	
+ref_id25445: left dish	
+ref_id25446: right bowl	
+ref_id25504: right bed	
+ref_id25505: couch	
+ref_id25659: baby	
+ref_id25660: big bear	
+ref_id25694: white bear	
+ref_id25695: left bear	
+ref_id25717: red bus in middle	
+ref_id25718: bus on left	
+ref_id25719: red bus on right	
+ref_id25762: toilet in front	
+ref_id25763: toilet on bottom right	
+ref_id25788: top left apple	
+ref_id25789: bottom right	
+ref_id25826: left glass	
+ref_id25827: right cup	
+ref_id25831: right elephant	
+evaluating validation performance... 960/-1 (2.724717)	
+ref_id25832: elephant in back	
+ref_id25888: monitor on right	
+ref_id25889: left monitor	
+ref_id26005: broccoli on left	
+ref_id26006: broccoli on right	
+ref_id26007: broccoli in middle top	
+ref_id26157: top oven	
+ref_id26158: bottom microwave	
+ref_id26159: black keyboard	
+ref_id26160: keyboard	
+ref_id26344: bottom of couch	
+ref_id26345: left couch	
+ref_id26346: couch on right	
+ref_id26347: left couch	
+ref_id26384: left sandwich	
+ref_id26385: bottom right banana	
+ref_id26447: second boat from left	
+ref_id26448: boat on left	
+ref_id26449: boat in front	
+ref_id26450: boat in front	
+ref_id26513: right truck	
+ref_id26514: middle truck	
+ref_id26515: left truck	
+ref_id26528: left bike	
+ref_id26529: bike	
+ref_id26601: middle monitor	
+ref_id26602: tv	
+ref_id26618: right bird	
+ref_id26619: left bird	
+ref_id26825: left bear	
+ref_id26826: right bear	
+ref_id26844: left bus	
+evaluating validation performance... 992/-1 (2.938071)	
+ref_id26845: front bus	
+ref_id27005: red book	
+ref_id27006: traffic light	
+ref_id27007: traffic light	
+ref_id27130: right giraffe	
+ref_id27131: left giraffe	
+ref_id27214: right bear	
+ref_id27215: big bear	
+ref_id27232: right cat	
+ref_id27233: cat on left	
+ref_id27247: baby zebra	
+ref_id27248: zebra on right	
+ref_id27249: zebra in front	
+ref_id27250: right truck	
+ref_id27251: car in front of car	
+ref_id27288: top left microwave	
+ref_id27289: right oven	
+ref_id27314: left urinal	
+ref_id27315: toilet on right	
+ref_id27373: front sheep	
+ref_id27374: left sheep	
+ref_id27432: left sandwich	
+ref_id27433: right sandwich	
+ref_id27465: cat on right	
+ref_id27466: left cat	
+ref_id27526: green toothbrush	
+ref_id27527: bottom board	
+ref_id27572: pizza in back	
+ref_id27573: pizza	
+ref_id27751: bottom of food	
+ref_id27796: right sandwich	
+ref_id27797: left sandwich	
+evaluating validation performance... 1024/-1 (2.135725)	
+ref_id27848: left pizza	
+ref_id27849: right slice	
+ref_id27880: bottom book	
+ref_id27881: top book	
+ref_id27882: book in middle	
+ref_id27883: left keyboard	
+ref_id27935: white book	
+ref_id27936: bottom book	
+ref_id27973: top bowl	
+ref_id28408: giraffe on right	
+ref_id28409: left giraffe	
+ref_id28439: left vase	
+ref_id28440: right vase	
+ref_id28441: second from left	
+ref_id28442: second from right	
+ref_id28852: train	
+ref_id28853: black chair on right	
+ref_id28854: white chair	
+ref_id29103: bottom cat	
+ref_id29104: top cat	
+ref_id29105: left toilet	
+ref_id29106: right toilet	
+ref_id29153: giraffe in front	
+ref_id29154: giraffe	
+ref_id29238: dog on right	
+ref_id29239: dog on left	
+ref_id29270: sandwich	
+ref_id29271: right sandwich	
+ref_id29301: big elephant	
+ref_id29302: baby	
+ref_id29360: top bowl of food	
+ref_id29361: white stuff in front of plate	
+evaluating validation performance... 1056/-1 (2.695838)	
+ref_id29385: right giraffe	
+ref_id29386: right giraffe	
+ref_id29387: giraffe in middle	
+ref_id29388: giraffe in front	
+ref_id29389: left giraffe	
+ref_id29460: brown bear on left	
+ref_id29461: white bear	
+ref_id29462: bear on left	
+ref_id29569: bottom left bowl	
+ref_id29570: top right bowl	
+ref_id29575: right car	
+ref_id29576: truck on left	
+ref_id29625: white bike	
+ref_id29626: middle bike	
+ref_id29627: right bike	
+ref_id29630: plane	
+ref_id29631: plane in back	
+ref_id29856: left chair	
+ref_id29857: red chair	
+ref_id29920: umbrella on right	
+ref_id29921: top left umbrella	
+ref_id29964: red shirt	
+ref_id29967: bus	
+ref_id29974: car on right	
+ref_id29975: car on left	
+ref_id30281: right monitor	
+ref_id30282: left monitor	
+ref_id30393: left elephant	
+ref_id30394: big elephant	
+ref_id30401: left bed	
+ref_id30402: bottom right corner	
+ref_id30403: red and white and white and white suitcase	
+evaluating validation performance... 1088/-1 (2.451682)	
+ref_id30480: plant in back left	
+ref_id30481: middle vase	
+ref_id30482: left plant	
+ref_id30529: cow in back	
+ref_id30530: front cow	
+ref_id30631: bottom left suitcase	
+ref_id30632: left suitcase	
+ref_id30633: right suitcase	
+ref_id30634: black suitcase in front	
+ref_id30699: right cat	
+ref_id30700: cat	
+ref_id30701: left bear	
+ref_id30702: bear on right	
+ref_id30719: right car	
+ref_id30720: second bike from right	
+ref_id30721: front bike	
+ref_id30813: right bowl	
+ref_id30814: left bowl	
+ref_id30839: cat on left	
+ref_id30840: cat	
+ref_id30869: truck	
+ref_id30870: blue truck	
+ref_id30970: glass of water	
+ref_id30971: cup on right	
+ref_id30996: right meter	
+ref_id30997: left meter	
+ref_id31025: right monitor	
+ref_id31026: left monitor	
+ref_id31114: giraffe on left	
+ref_id31115: right giraffe	
+ref_id31161: left sheep	
+ref_id31162: right sheep	
+evaluating validation performance... 1120/-1 (2.314130)	
+ref_id31324: top sandwich	
+ref_id31325: sandwich	
+ref_id31373: bottom right cup	
+ref_id31374: top cup	
+ref_id31375: bottom left bowl	
+ref_id31376: top left cup	
+ref_id31377: cup on right	
+ref_id31378: cup on left	
+ref_id31391: horse on left	
+ref_id31392: horse on right	
+ref_id31393: top right sheep	
+ref_id31394: sheep in the back	
+ref_id31395: sheep on right	
+ref_id31396: sheep on bottom right	
+ref_id31397: sheep on left	
+ref_id31558: right bus	
+ref_id31559: bus in middle	
+ref_id31560: bus on left	
+ref_id31579: front vase	
+ref_id31580: vase on left	
+ref_id31581: vase on right	
+ref_id31594: bike on right	
+ref_id31595: second bike from left	
+ref_id31596: bike on right	
+ref_id31619: truck in back	
+ref_id31620: truck	
+ref_id31687: right sandwich	
+ref_id31688: left sandwich	
+ref_id31703: left one	
+ref_id31706: left horse	
+ref_id31729: giraffe in the middle	
+ref_id31730: giraffe on right	
+evaluating validation performance... 1152/-1 (2.476361)	
+ref_id31736: right sheep	
+ref_id31737: left sheep	
+ref_id31758: right animal	
+ref_id31759: left sheep	
+ref_id31778: left meter	
+ref_id31779: right meter	
+ref_id31897: bottom right sheep	
+ref_id31898: sheep on left	
+ref_id31899: sheep in the back	
+ref_id31960: left donut	
+ref_id31961: right donut	
+ref_id31981: umbrella on left	
+ref_id31982: umbrella in middle	
+ref_id32094: elephant on left	
+ref_id32095: elephant on right	
+ref_id32165: right dog	
+ref_id32166: left hot dog	
+ref_id32214: pizza slice in front	
+ref_id32265: top oven	
+ref_id32266: stove	
+ref_id32311: bike in back	
+ref_id32312: bike	
+ref_id32362: bottom food	
+ref_id32363: red thing	
+ref_id32364: top right cake	
+ref_id32365: bottom left cake	
+ref_id32370: phone on left	
+ref_id32371: phone	
+ref_id32572: right monitor	
+ref_id32573: left monitor	
+ref_id32642: dog on right	
+ref_id32643: dog in front	
+evaluating validation performance... 1184/-1 (2.367955)	
+ref_id32928: zebra in back	
+ref_id32929: front zebra	
+ref_id32956: left person	
+ref_id32957: man in black	
+ref_id33014: pizza on right	
+ref_id33015: top pizza	
+ref_id33016: middle slice	
+ref_id33017: bottom left pizza	
+ref_id33018: top pizza	
+ref_id33237: bottom left cup	
+ref_id33238: bottom row right bottom row	
+ref_id33239: right cup	
+ref_id33240: red cup	
+ref_id33241: middle cup	
+ref_id33242: second from left	
+ref_id33291: cat on right	
+ref_id33292: cat on left	
+ref_id33439: zebra in front	
+ref_id33455: right car	
+ref_id33470: pizza closest to us	
+ref_id33471: left pizza	
+ref_id33500: elephant on right	
+ref_id33501: left elephant	
+ref_id33626: bottom right donut	
+ref_id33627: top donut	
+ref_id33628: left donut	
+ref_id33639: left zebra	
+ref_id33681: middle bus	
+ref_id33682: left train	
+ref_id33683: right bus	
+ref_id33684: right chair	
+ref_id33685: top left corner	
+evaluating validation performance... 1216/-1 (2.490460)	
+ref_id33686: left cat	
+ref_id33714: second bike from right	
+ref_id33715: bike	
+ref_id33800: left cup	
+ref_id33801: right cup	
+ref_id33806: elephant on left	
+ref_id33807: right elephant	
+ref_id33829: bottom left cup	
+ref_id33830: red cup	
+ref_id33831: white bowl on right	
+ref_id33914: broccoli on left	
+ref_id33915: bottom center broccoli	
+ref_id33952: top donut	
+ref_id33953: bottom donut	
+ref_id33992: bottom right scissors	
+ref_id33993: third from right third from bottom	
+ref_id33994: second banana from left board	
+ref_id33995: bottom right corner	
+ref_id33996: top right banana	
+ref_id33997: top row second from right	
+ref_id34321: cup on right	
+ref_id34322: glass on left	
+ref_id34631: elephant on right	
+ref_id34632: left elephant	
+ref_id34787: left sandwich	
+ref_id34788: right side of sandwich	
+ref_id34858: blue and white umbrella	
+ref_id34859: left umbrella	
+ref_id34895: cup	
+ref_id34943: bottom of pic	
+ref_id34944: car behind the car	
+ref_id34998: right pizza	
+evaluating validation performance... 1248/-1 (2.574331)	
+ref_id34999: left pizza	
+ref_id35034: bottom right fridge	
+ref_id35035: fridge	
+ref_id35090: laptop on left	
+ref_id35091: laptop	
+ref_id35121: right laptop	
+ref_id35122: left chair	
+ref_id35148: chair on right	
+ref_id35149: couch in the middle	
+ref_id35188: broccoli on right	
+ref_id35189: bottom right piece of broccoli	
+ref_id35190: broccoli on left	
+ref_id35191: middle piece of broccoli	
+ref_id35194: right cat	
+ref_id35195: left cat	
+ref_id35217: bird on left	
+ref_id35218: right bird	
+ref_id35368: top left bag	
+ref_id35369: right bag	
+ref_id35370: suitcase on right	
+ref_id35371: suitcase on left	
+ref_id35372: middle guy	
+ref_id35377: donut in middle	
+ref_id35378: top left donut	
+ref_id35379: top left donut	
+ref_id35391: stove on right	
+ref_id35392: oven	
+ref_id35420: chair on left	
+ref_id35421: chair on right	
+ref_id35522: orange on right	
+ref_id35523: orange on right	
+ref_id35524: orange	
+evaluating validation performance... 1280/-1 (2.289380)	
+ref_id35525: bottom right apple	
+ref_id35526: green apple	
+ref_id35764: black bag in back	
+ref_id35765: bottom right corner	
+ref_id35833: left couch	
+ref_id35834: couch on right	
+ref_id35913: right zebra	
+ref_id35914: left zebra	
+ref_id36001: green plant	
+ref_id36002: bottom right corner	
+ref_id36082: cat on right	
+ref_id36083: cat	
+ref_id36111: truck	
+ref_id36112: left truck	
+ref_id36209: right zebra	
+ref_id36210: zebra in front	
+ref_id36224: left pizza	
+ref_id36225: right pizza	
+ref_id36279: banana on top right	
+ref_id36280: left banana	
+ref_id36281: middle banana	
+ref_id36365: right board	
+ref_id36366: top left boat	
+ref_id36432: left microwave	
+ref_id36433: right microwave	
+ref_id36434: top left microwave	
+ref_id36435: right microwave	
+ref_id36436: microwave on left	
+ref_id36689: sandwich	
+ref_id36690: top sandwich	
+ref_id36725: left carrot slice cut off carrot way way far left	
+ref_id36726: orange on top right	
+evaluating validation performance... 1312/-1 (2.655355)	
+ref_id36762: second glass from right	
+ref_id36763: right glass	
+ref_id36764: left glass	
+ref_id36789: blurry bottle on right	
+ref_id36790: left glass	
+ref_id36894: right giraffe	
+ref_id36895: left giraffe	
+ref_id36900: bottom center bear	
+ref_id36901: bear on right	
+ref_id36902: left bear in blue	
+ref_id36903: bear on right	
+ref_id37150: middle sheep	
+ref_id37151: right sheep	
+ref_id37201: chair in the middle	
+ref_id37202: chair on right	
+ref_id37203: chair on left	
+ref_id37213: plane in back	
+ref_id37214: front plane	
+ref_id37252: bottom left corner	
+ref_id37253: right vase	
+ref_id37254: vase on right	
+ref_id37255: vase	
+ref_id37278: bananas on left	
+ref_id37279: bananas on right	
+ref_id37540: slice of pizza in front of the slice	
+ref_id37541: top pizza	
+ref_id37572: boat in front of the blue	
+ref_id37573: bottom boat	
+ref_id37650: left carrot	
+ref_id37651: broccoli on right	
+ref_id37652: top bowl	
+ref_id37661: bowl of center	
+evaluating validation performance... 1344/-1 (2.652356)	
+ref_id37662: bowl on right	
+ref_id37663: bowl on right	
+ref_id37710: bottom left luggage	
+ref_id37711: black suitcase bottom left	
+ref_id37712: right suitcase	
+ref_id37749: left zebra	
+ref_id37750: right zebra	
+ref_id37802: left pizza	
+ref_id37803: bottom pizza	
+ref_id37879: right couch	
+ref_id37880: left couch	
+ref_id37895: left couch	
+ref_id37896: couch on right	
+ref_id37933: right horse	
+ref_id37963: cow on left	
+ref_id37964: front cow	
+ref_id38029: hand holding phone	
+ref_id38030: phone on phone	
+ref_id38151: banana on right	
+ref_id38266: top left slice	
+ref_id38267: middle sandwich	
+ref_id38268: bottom sandwich	
+ref_id38333: second from right	
+ref_id38334: right most boat	
+ref_id38335: left most board	
+ref_id38368: bottom right dish	
+ref_id38369: bottom left apple	
+ref_id38370: top left dish	
+ref_id38371: top right	
+ref_id38388: bear on right	
+ref_id38389: left bear	
+ref_id38567: right dog	
+evaluating validation performance... 1376/-1 (2.299660)	
+ref_id38568: dog	
+ref_id38601: middle clock	
+ref_id38602: clock on left	
+ref_id38603: clock on right	
+ref_id38647: plane in back	
+ref_id38648: bed on right	
+ref_id38649: bed	
+ref_id38720: top right corner	
+ref_id38721: broccoli on right	
+ref_id38779: white dog in back	
+ref_id38780: left dog	
+ref_id38781: right dog	
+ref_id38783: white bottle	
+ref_id38903: chair on right	
+ref_id38919: left kite	
+ref_id38920: top left kite	
+ref_id39016: middle urinal	
+ref_id39017: bottom left vase	
+ref_id39018: right toothbrush	
+ref_id39024: left elephant	
+ref_id39025: elephant on right	
+ref_id39026: elephant in front	
+ref_id39045: right giraffe	
+ref_id39150: train on left	
+ref_id39151: train	
+ref_id39159: cat on bottom	
+ref_id39160: cat on top	
+ref_id39206: left suitcase	
+ref_id39207: right bed	
+ref_id39387: baby giraffe	
+ref_id39388: giraffe	
+ref_id39400: bottom right bear	
+evaluating validation performance... 1408/-1 (2.418517)	
+ref_id39401: middle bear	
+ref_id39402: middle bear	
+ref_id39403: middle bear	
+ref_id39404: left bear	
+ref_id39405: top right bear	
+ref_id39448: left elephant	
+ref_id39449: elephant on right	
+ref_id39456: left cow	
+ref_id39457: cow on right	
+ref_id39460: right sandwich	
+ref_id39461: left sandwich	
+ref_id39765: left chair	
+ref_id39766: chair in front	
+ref_id39797: left cow	
+ref_id39798: right cow	
+ref_id39815: apple bottom right	
+ref_id39816: bottom apple	
+ref_id39817: top apple	
+ref_id39850: zebra on right	
+ref_id39851: zebra	
+ref_id39883: right slice	
+ref_id39884: middle slice	
+ref_id39885: left pizza	
+ref_id39891: right laptop	
+ref_id39892: left laptop	
+ref_id39963: second truck from left	
+ref_id39964: red truck	
+ref_id39965: top left	
+ref_id39966: bottom right orange	
+ref_id40063: cat in front	
+ref_id40064: cat	
+ref_id40188: bed	
+evaluating validation performance... 1440/-1 (2.411429)	
+ref_id40189: bed in the middle	
+ref_id40211: top right	
+ref_id40212: phone	
+ref_id40213: right phone	
+ref_id40235: bottom left donut	
+ref_id40236: top left cake	
+ref_id40237: top right cake	
+ref_id40238: bottom right cake	
+ref_id40248: left black	
+ref_id40249: black suitcase	
+ref_id40287: bowl of food	
+ref_id40288: bowl on right	
+ref_id40350: table	
+ref_id40351: table behind table	
+ref_id40358: reflection of the reflection of the person in the back	
+ref_id40400: cat on right	
+ref_id40401: left cat	
+ref_id40456: bananas	
+ref_id40457: left banana	
+ref_id40458: right dog	
+ref_id40459: dog on left	
+ref_id40479: left bike	
+ref_id40480: middle bike	
+ref_id40500: bike on right	
+ref_id40501: front bike	
+ref_id40502: front bike	
+ref_id40554: top left corner	
+ref_id40555: front sandwich	
+ref_id40571: cow in front	
+ref_id40572: brown cow	
+ref_id40753: left meter	
+ref_id40754: right meter	
+evaluating validation performance... 1472/-1 (2.403399)	
+ref_id40762: bottom left fruit	
+ref_id40763: top right orange	
+ref_id40804: left giraffe	
+ref_id40805: right giraffe	
+ref_id40810: bottom left corner	
+ref_id40811: top left banana	
+ref_id40812: right side of food	
+ref_id40909: toilet on left	
+ref_id40910: right toilet	
+ref_id40945: middle banana	
+ref_id40946: bottom row second from right	
+ref_id40947: middle row second from right	
+ref_id40948: second banana from bottom	
+ref_id40949: bottom left banana	
+ref_id41094: left elephant	
+ref_id41095: elephant in the middle	
+ref_id41136: giraffe in front	
+ref_id41137: giraffe in front	
+ref_id41148: right chair	
+ref_id41167: left bed	
+ref_id41168: right bed	
+ref_id41173: left screen	
+ref_id41174: top screen	
+ref_id41197: chair on left	
+ref_id41198: chair on right	
+ref_id41209: the main toothbrush	
+ref_id41351: blue bottle	
+ref_id41359: right giraffe	
+ref_id41360: left giraffe	
+ref_id41531: right bed	
+ref_id41532: red couch	
+ref_id41551: left giraffe	
+evaluating validation performance... 1504/-1 (2.917568)	
+ref_id41552: giraffe on right	
+ref_id41743: sheep in back	
+ref_id41744: sheep in front	
+ref_id41795: top left broccoli	
+ref_id41796: broccoli on right	
+ref_id41797: broccoli on right	
+ref_id41798: bottom left broccoli	
+ref_id41799: broccoli on left	
+ref_id41805: middle bowl of food in middle	
+ref_id41806: left bowl of food	
+ref_id41807: bottom right bowl	
+ref_id41808: bottom right bowl	
+ref_id41809: bottom left bowl	
+ref_id41877: sheep in back	
+ref_id41878: front sheep	
+ref_id41938: right cat	
+ref_id41939: left cat	
+ref_id42136: left cow	
+ref_id42137: front cow	
+ref_id42284: bird in back	
+ref_id42285: bird in front	
+ref_id42296: left duck	
+ref_id42297: right bird	
+ref_id42329: left boat	
+ref_id42330: middle board	
+ref_id42354: bottom row second from right	
+ref_id42355: second toilet from right	
+ref_id42356: toilet in front	
+ref_id42357: top right toilet	
+ref_id42358: white toilet on left	
+ref_id42359: second toilet from left	
+ref_id42428: banana on left	
+evaluating validation performance... 1536/-1 (2.627489)	
+ref_id42429: banana on right	
+ref_id42658: right bowl	
+ref_id42659: bowl of food on bottom	
+ref_id42660: top left bowl	
+ref_id42697: bottom left donut	
+ref_id42698: bottom right donut	
+ref_id42839: train on left	
+ref_id42922: left bird	
+ref_id42923: bird on right	
+ref_id42928: zebra on left	
+ref_id42929: right zebra	
+ref_id42930: zebra in front	
+ref_id43160: right sandwich	
+ref_id43161: left sandwich	
+ref_id43210: right cake	
+ref_id43211: left suitcase	
+ref_id43396: left bird	
+ref_id43446: front sandwich	
+ref_id43447: top middle bowl	
+ref_id43448: front plate	
+ref_id43449: sandwich on the right	
+ref_id43480: right sandwich	
+ref_id43481: left sandwich	
+ref_id43581: toilet on left	
+ref_id43582: toilet on right	
+ref_id43596: top dog	
+ref_id43597: bottom right corner	
+ref_id43598: giraffe on top	
+ref_id43599: left giraffe	
+ref_id43700: sandwich on right	
+ref_id43701: left sandwich	
+ref_id43784: left truck	
+evaluating validation performance... 1568/-1 (2.041534)	
+ref_id43785: truck	
+ref_id43815: middle banana	
+ref_id43816: third banana from right	
+ref_id43817: bottom right banana	
+ref_id43818: third from right	
+ref_id43819: second from left	
+ref_id43940: left cow	
+ref_id43941: cow on right	
+ref_id43987: second from right	
+ref_id43988: bottom right corner	
+ref_id43989: red suitcase	
+ref_id43990: black suitcase in middle	
+ref_id44146: bear on right	
+ref_id44147: bear on left	
+ref_id44160: left bowl	
+ref_id44161: right bowl	
+ref_id44162: bottom part of table	
+ref_id44163: top dish	
+ref_id44228: right bed	
+ref_id44229: bed on left	
+ref_id44296: bottom left bowl	
+ref_id44297: bowl of food	
+ref_id44300: front giraffe	
+ref_id44301: giraffe on right	
+ref_id44369: white plane	
+ref_id44370: plane in middle	
+ref_id44408: plane on left	
+ref_id44409: plane	
+ref_id44426: top right sandwich	
+ref_id44427: left most piece of sandwich	
+ref_id44428: top left sandwich	
+ref_id44429: middle sandwich	
+evaluating validation performance... 1600/-1 (2.728741)	
+ref_id44430: bottom left sandwich	
+ref_id44431: second from left	
+ref_id44432: right sandwich	
+ref_id44454: toilet	
+ref_id44463: left sheep	
+ref_id44464: right sheep	
+ref_id44467: right sandwich	
+ref_id44468: left sandwich	
+ref_id44514: car on right	
+ref_id44515: car on left	
+ref_id44516: yellow bus	
+ref_id44573: right urinal	
+ref_id44574: toilet on left	
+ref_id44661: white bear bottom right	
+ref_id44662: second bear from left	
+ref_id44663: second from right	
+ref_id44814: right meter	
+ref_id44815: left meter	
+ref_id44856: red bottle	
+ref_id44857: bottle on left	
+ref_id44884: bear on right	
+ref_id44885: bear on right	
+ref_id44886: second bear from left	
+ref_id44887: top row bear in middle	
+ref_id44888: bear on left	
+ref_id44941: left meter	
+ref_id44942: right meter	
+ref_id44989: left side of table	
+ref_id44990: right edge of pic	
+ref_id45056: front bed	
+ref_id45057: left bed	
+ref_id45127: second from left	
+evaluating validation performance... 1632/-1 (2.701850)	
+ref_id45128: left most vase	
+ref_id45129: green shirt	
+ref_id45130: left red	
+ref_id45131: middle vase	
+ref_id45256: glass of beer	
+ref_id45257: right glass	
+ref_id45498: white bus	
+ref_id45499: bus on left	
+ref_id45503: right bunch of bananas	
+ref_id45504: bananas in middle	
+ref_id45505: middle bunch of bananas	
+ref_id45533: right elephant	
+ref_id45534: left elephant	
+ref_id45535: middle elephant	
+ref_id45645: left zebra	
+ref_id45646: right zebra	
+ref_id45680: big cake	
+ref_id45681: second cake from right	
+ref_id45957: red train in back	
+ref_id45958: train	
+ref_id45972: pizza	
+ref_id45973: pizza slice on right	
+ref_id45974: food	
+ref_id45975: top right corner	
+ref_id45976: left sandwich	
+ref_id45977: sandwich on right	
+ref_id45984: left toothbrush	
+ref_id45985: green toothbrush	
+ref_id46007: chair on left	
+ref_id46008: chair on right	
+ref_id46423: right donut	
+ref_id46439: second row from left bunch	
+evaluating validation performance... 1664/-1 (2.380947)	
+ref_id46440: second row from left third banana from left third from	
+ref_id46441: second row from left third from bottom	
+ref_id46476: right giraffe	
+ref_id46477: giraffe in front	
+ref_id46501: truck on right	
+ref_id46502: white truck	
+ref_id46503: white truck	
+ref_id46569: right elephant	
+ref_id46570: baby elephant	
+ref_id46668: zebra in back	
+ref_id46669: zebra	
+ref_id46684: top pizza	
+ref_id46685: pizza	
+ref_id46724: car in front of car	
+ref_id46725: car in front	
+ref_id46744: big sheep	
+ref_id46773: right banana	
+ref_id46774: green bowl	
+ref_id46775: middle bowl	
+ref_id46796: left pizza	
+ref_id46797: pizza in the back	
+ref_id46798: middle pizza	
+ref_id46817: bear in front	
+ref_id46818: bear on right	
+ref_id46965: right bench	
+ref_id46966: left bench	
+ref_id46986: left suitcase	
+ref_id46987: top right case	
+ref_id46988: right luggage	
+ref_id46989: middle suitcase	
+ref_id46990: second from left suitcase	
+ref_id47273: top carrot	
+evaluating validation performance... 1696/-1 (2.620284)	
+ref_id47274: top hot dog	
+ref_id47275: top right hot dog	
+ref_id47276: carrot in middle	
+ref_id47277: bottom carrot	
+ref_id47305: right giraffe	
+ref_id47306: left giraffe	
+ref_id47310: front bowl	
+ref_id47311: bowl of food in the back	
+ref_id47312: top right bowl	
+ref_id47313: right train	
+ref_id47314: second train from right	
+ref_id47315: train on left	
+ref_id47318: chair on left	
+ref_id47366: right giraffe	
+ref_id47367: left zebra	
+ref_id47450: white sheep	
+ref_id47451: top left sheep	
+ref_id47452: sheep on right	
+ref_id47453: sheep on right	
+ref_id47454: top sheep	
+ref_id47455: bottom left sheep	
+ref_id47529: second boat from bottom	
+ref_id47530: bottom left plane	
+ref_id47531: right plane	
+ref_id47603: giraffe in front	
+ref_id47604: giraffe on right	
+ref_id47644: bottom oven	
+ref_id47645: top part of table	
+ref_id47740: bear on right	
+ref_id47741: middle bear	
+ref_id47742: middle bear	
+ref_id47743: red bear on right	
+evaluating validation performance... 1728/-1 (2.608643)	
+ref_id47840: bed on left	
+ref_id47841: front bed	
+ref_id47875: black dog	
+ref_id47876: dog on right	
+ref_id47931: giraffe in back	
+ref_id47932: left giraffe	
+ref_id47957: person on left	
+ref_id48055: small giraffe	
+ref_id48056: giraffe	
+ref_id48175: bowl of food in front	
+ref_id48176: bowl of food on right	
+ref_id48302: zebra in front	
+ref_id48303: zebra in front	
+ref_id48441: bottom left piece of food	
+ref_id48442: left piece of pizza	
+ref_id48443: top slice	
+ref_id48444: right sandwich	
+ref_id48545: left vase	
+ref_id48546: vase on right	
+ref_id48585: bike on right	
+ref_id48586: bike in middle	
+ref_id48587: second bike from left	
+ref_id48588: bike on left	
+ref_id48589: second bike from right	
+ref_id48623: top right sandwich	
+ref_id48624: left sandwich	
+ref_id48625: right sandwich	
+ref_id48681: chair on right	
+ref_id48682: right chair	
+ref_id48683: bottom left corner	
+ref_id48684: right chair	
+ref_id48685: couch on left	
+evaluating validation performance... 1760/-1 (2.331917)	
+ref_id48686: chair on left	
+ref_id48861: left sandwich	
+ref_id48862: cake on right	
+ref_id48865: left elephant	
+ref_id48866: elephant in middle	
+ref_id48888: elephant on right	
+ref_id48889: left elephant	
+ref_id49111: table on right	
+ref_id49165: white car	
+ref_id49166: truck	
+ref_id49167: truck	
+ref_id49168: white car on right	
+ref_id49248: motorcycle on right	
+ref_id49249: second bike from right	
+ref_id49250: motorcycle on right	
+ref_id49288: donut on right	
+ref_id49289: bottom left donut	
+ref_id49290: top donut	
+ref_id49291: front giraffe	
+ref_id49292: left giraffe	
+ref_id49293: middle giraffe	
+ref_id49377: left cup	
+ref_id49378: bowl on right	
+ref_id49429: left bottle	
+ref_id49430: bottle on right	
+ref_id49446: pizza	
+ref_id49447: slice of pizza slice to the right	
+ref_id49448: top slice	
+ref_id49455: right broccoli	
+ref_id49456: top broccoli	
+ref_id49502: surfboard on right	
+ref_id49503: second board from right	
+evaluating validation performance... 1792/-1 (2.592419)	
+ref_id49583: right dog	
+ref_id49584: left chair	
+ref_id49672: left suitcase	
+ref_id49673: right toothbrush	
+ref_id49701: middle bus	
+ref_id49702: second bus from right	
+ref_id49703: right bus	
+ref_id49721: black suitcase on right	
+ref_id49781: pizza in back	
+ref_id49782: pizza in front	
+ref_id49818: dog on right	
+ref_id49819: dog on left	
+ref_id49824: left car	
+ref_id49825: white car	
+ref_id49949: glass on right	
+ref_id49950: cup in front	
+ref_id49986: zebra in middle	
+ref_id49987: front zebra	
+evaluating validation performance... 14/-1 (2.652162)	
+loss: 	2.5075353272744	
+loading dataset refcoco into memory...
+creating index...
+index created.
+DONE (t=7.18s)
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 4780, 'reflen': 5219, 'guess': [4780, 2970, 1251, 326], 'correct': [3226, 858, 181, 18]}
+ratio: 0.9158842690168775
+Bleu_1: 0.616
+Bleu_2: 0.403
+Bleu_3: 0.278
+Bleu_4: 0.181
+computing METEOR score...
+METEOR: 0.261
+computing Rouge score...
+ROUGE_L: 0.550
+computing CIDEr score...
+CIDEr: 1.368
+{'Bleu_1': 0.6156734491750132, 'Bleu_2': 0.4028075583706626, 'Bleu_3': 0.27770059827230914, 'Bleu_4': 0.18122780378349218, 'METEOR': 0.26095728433651694, 'ROUGE_L': 0.5499371618151464, 'CIDEr': 1.3678752811354913}
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 14422, 'reflen': 16298, 'guess': [14422, 9182, 4150, 1210], 'correct': [7092, 1419, 289, 39]}
+ratio: 0.8848938520063269
+Bleu_1: 0.432
+Bleu_2: 0.242
+Bleu_3: 0.153
+Bleu_4: 0.100
+computing METEOR score...
+METEOR: 0.176
+computing Rouge score...
+ROUGE_L: 0.401
+computing CIDEr score...
+CIDEr: 1.007
+average (self_sc - max_cross_sc) = 0.287
+56.46% genenerated sentence has higher CIDEr using groud-truth expressions
+{
+  Bleu_1 : 0.61567344917501
+  ROUGE_L : 0.54993716181515
+  Bleu_3 : 0.27770059827231
+  Bleu_4 : 0.18122780378349
+  Bleu_2 : 0.40280755837066
+  METEOR : 0.26095728433652
+  CIDEr : 1.3678752811355
+}

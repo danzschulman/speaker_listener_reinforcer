@@ -24,7 +24,8 @@ parser.add_argument('--model_id', default='visdif', help='model name: baseline, 
 parser.add_argument('--beam_size', default='1')
 parser.add_argument('--split', default='testA')
 parser.add_argument('--write_result', default=-1, help='write result into cache_path')
-parser.add_argument('--refer_dir', default='new_data', help='data or new_data, refer directory that stores annotations.')
+#parser.add_argument('--refer_dir', default='new_data', help='data or new_data, refer directory that stores annotations.')
+parser.add_argument('--refer_dir', default='data', help='data or new_data, refer directory that stores annotations.')
 args = parser.parse_args()
 params = vars(args)
 
@@ -52,9 +53,9 @@ refEval.evaluate()
 overall = {}
 for metric, score in refEval.eval.items():
 	overall[metric] = score
-print overall
+print(overall)
 
-if params['write_result'] > 0:
+if int(params['write_result']) > 0:
 	refToEval = refEval.refToEval
 	for res in Res:
 		ref_id, sent = res['ref_id'], res['sent']

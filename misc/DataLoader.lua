@@ -330,10 +330,10 @@ end
 -- fetch feats = {cxt_feats, ann_feats, lfeats, dif_ann_feats, dif_lfeats}
 function DataLoader:fetch_feats(batch_ann_ids, expand_size, opt)
 
-	local cxt_feats = torch.FloatTensor(#batch_ann_ids*expand_size, 4096)
-	local ann_feats = torch.FloatTensor(#batch_ann_ids*expand_size, 4096)
+	local cxt_feats = torch.FloatTensor(#batch_ann_ids*expand_size, 2048)
+	local ann_feats = torch.FloatTensor(#batch_ann_ids*expand_size, 2048)
 	local lfeats = torch.FloatTensor(#batch_ann_ids*expand_size, 5)
-	local dif_ann_feats = torch.FloatTensor(#batch_ann_ids*expand_size, 4096)
+	local dif_ann_feats = torch.FloatTensor(#batch_ann_ids*expand_size, 2048)
 	local dif_lfeats = torch.FloatTensor(#batch_ann_ids*expand_size, 5*opt.dif_num)
 
 	for i, ann_id in ipairs(batch_ann_ids) do
@@ -341,12 +341,12 @@ function DataLoader:fetch_feats(batch_ann_ids, expand_size, opt)
 		local il = (i-1)*expand_size + 1
 		-- fetch feat
 		local cf, af, lf = self:fetch_feat(ann_id, opt)
-		cxt_feats[{ {il, il+expand_size-1} }] = cf:expand(expand_size, 4096)
-		ann_feats[{ {il, il+expand_size-1} }] = af:expand(expand_size, 4096)
+		cxt_feats[{ {il, il+expand_size-1} }] = cf:expand(expand_size, 2048)
+		ann_feats[{ {il, il+expand_size-1} }] = af:expand(expand_size, 2048)
 		lfeats[{ {il, il+expand_size-1} }] = lf:view(1, -1):expand(expand_size, 5)
 		-- fetch dif_feat
 		local df, dlf = self:fetch_dif_feat(ann_id, opt)
-		dif_ann_feats[{ {il, il+expand_size-1} }] = df:view(1, -1):expand(expand_size, 4096)
+		dif_ann_feats[{ {il, il+expand_size-1} }] = df:view(1, -1):expand(expand_size, 2048)
 		dif_lfeats[{ {il, il+expand_size-1} }] = dlf:view(1, -1):expand(expand_size, 5*opt.dif_num)
 	end
 
@@ -439,15 +439,15 @@ function DataLoader:fetch_feat(ann_id, opt)
 	local ann = self.Anns[ann_id]
 	local image = self.Images[ann['image_id']]	
 	-- fetch cxt_feat
-	local cxt_feat = torch.FloatTensor(1, 4096)
-	if use_context == 1 then cxt_feat = self.feats['img']:read('/img_feats'):partial(image['h5_id'], {1, 4096}) end
-	if use_context == 2 then cxt_feat = self.feats['window2']:read('/window_feats'):partial(ann['h5_id'], {1, 4096}) end
-	if use_context == 3 then cxt_feat = self.feats['window3']:read('/window_feats'):partial(ann['h5_id'], {1, 4096}) end
-	if use_context == 4 then cxt_feat = self.feats['window4']:read('/window_feats'):partial(ann['h5_id'], {1, 4096}) end
-	if use_context == 5 then cxt_feat = self.feats['window5']:read('/window_feats'):partial(ann['h5_id'], {1, 4096}) end
+	local cxt_feat = torch.FloatTensor(1, 2048)
+	if use_context == 1 then cxt_feat = self.feats['img']:read('/img_feats'):partial(image['h5_id'], {1, 2048}) end
+	if use_context == 2 then cxt_feat = self.feats['window2']:read('/window_feats'):partial(ann['h5_id'], {1, 2048}) end
+	if use_context == 3 then cxt_feat = self.feats['window3']:read('/window_feats'):partial(ann['h5_id'], {1, 2048}) end
+	if use_context == 4 then cxt_feat = self.feats['window4']:read('/window_feats'):partial(ann['h5_id'], {1, 2048}) end
+	if use_context == 5 then cxt_feat = self.feats['window5']:read('/window_feats'):partial(ann['h5_id'], {1, 2048}) end
 	-- fetch ann_feat
-	local ann_feat = torch.FloatTensor(1, 4096)
-	if use_ann == 1 then ann_feat = self.feats['ann']:read('/ann_feats'):partial(ann['h5_id'], {1, 4096}) end
+	local ann_feat = torch.FloatTensor(1, 2048)
+	if use_ann == 1 then ann_feat = self.feats['ann']:read('/ann_feats'):partial(ann['h5_id'], {1, 2048}) end
 	if use_ann ~= 1 then print('no such option right now.'); os.exit() end
 	-- compute lfeats
 	local x, y, w, h = unpack(ann['box'])
@@ -468,7 +468,7 @@ function DataLoader:fetch_dif_feat(ref_ann_id, opt)
 	local dif_source = utils.getopt(opt, 'dif_source')   -- 1.st_anns, 2.dt_anns, 3.st_anns+dt_anns
 	local dif_num = utils.getopt(opt, 'dif_num')         -- number of nearby objects to be considerred
 	-- compute feat
-	local dif_ann_feat = torch.FloatTensor(4096):zero()
+	local dif_ann_feat = torch.FloatTensor(2048):zero()
 	local dif_lfeat = torch.FloatTensor(dif_num*5):zero()
 	local _, st_ann_ids, _, dt_ann_ids = self:fetch_neighbour_ids(ref_ann_id)
 	local cand_ann_ids
@@ -478,12 +478,12 @@ function DataLoader:fetch_dif_feat(ref_ann_id, opt)
 	if #cand_ann_ids ~= 0 then  -- if no nearby same-type object is found, return zeros
 		-- get cand_ann_feats
 		if #cand_ann_ids > dif_num then for k=dif_num+1, #cand_ann_ids do table.remove(cand_ann_ids, dif_num+1) end end
-		local cand_ann_feats = torch.FloatTensor(#cand_ann_ids, 4096):zero()
+		local cand_ann_feats = torch.FloatTensor(#cand_ann_ids, 2048):zero()
 		for j, cand_ann_id in ipairs(cand_ann_ids) do
-			cand_ann_feats[j] = self.feats['ann']:read('/ann_feats'):partial(self.Anns[cand_ann_id]['h5_id'], {1, 4096})
+			cand_ann_feats[j] = self.feats['ann']:read('/ann_feats'):partial(self.Anns[cand_ann_id]['h5_id'], {1, 2048})
 		end
 		-- get ref_ann_feat
-		local ref_ann_feat = self.feats['ann']:read('/ann_feats'):partial(self.Anns[ref_ann_id]['h5_id'], {1, 4096})
+		local ref_ann_feat = self.feats['ann']:read('/ann_feats'):partial(self.Anns[ref_ann_id]['h5_id'], {1, 2048})
 		-- compute pooled feat
 		if dif_pool == 1 then -- mean
 			cand_ann_feats = cand_ann_feats - ref_ann_feat:expandAs(cand_ann_feats)

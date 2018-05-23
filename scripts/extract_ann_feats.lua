@@ -14,6 +14,7 @@ local net_utils = require 'misc.net_utils'
 -- cuda
 require 'cutorch'
 require 'cunn'
+local t = require 'misc.transforms'
 
 ------------------------------------------------------------------------------------------
 -- prepare data
@@ -40,10 +41,13 @@ cutorch.setDevice(opt.gpuid + 1) -- note +1 because lua is 1-indexed
 local cudnn = require 'cudnn'
 cudnn.fastest, cudnn.benchmark = true, true
 -- load truncated cnn
-local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
-local cnn_fc7 = net_utils.build_cnn(cnn_raw)
-cnn_fc7:evaluate()
-cnn_fc7:cuda()
+--local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
+--local cnn_fc7 = net_utils.build_cnn(cnn_raw)
+--cnn_fc7:evaluate()
+--cnn_fc7:cuda()
+local resnet_model = torch.load('resnet-200.t7'):cuda()
+resnet_model:evaluate()
+--resnet_model:cuda()
 ------------------------------------------------------------------------------------------
 -- extract ann_feats
 ------------------------------------------------------------------------------------------
@@ -72,7 +76,7 @@ local feats = hdf5.open(feats_folder .. '/ann_feats.h5', 'w')
 -- extract
 local anns = loader.anns
 local Images = loader.Images
-local ann_feats = torch.zeros(#anns, 4096):float() -- fortunately, our CPU has enough memory for this amount
+local ann_feats = torch.zeros(#anns, 2048):float() -- fortunately, our CPU has enough memory for this amount
 for bs=1, #anns, opt.batch_size do
 	local be = math.min(bs+opt.batch_size-1, #anns)
 	-- current batch of anns
@@ -94,7 +98,23 @@ for bs=1, #anns, opt.batch_size do
 		-- raw img
 		local file_name = img['file_name']
 		local img_path = path.join(IMAGE_DIR, file_name)
-		local raw_img = image.load(img_path) * 255  -- make range (0-255)
+		--local raw_img = image.load(img_path) * 255  -- make range (0-255)
+        
+        local raw_img = image.load(img_path, 3, 'float')
+        
+        
+        local meanstd = {
+           mean = { 0.485, 0.456, 0.406 },
+           std = { 0.229, 0.224, 0.225 },
+        }
+
+        local transform = t.Compose{
+           --t.Scale(256),
+           t.ColorNormalize(meanstd),
+           --t.CenterCrop(224),
+        }
+        raw_img = transform(raw_img)
+        
 		-- raw ann, we use Junhua's approach
 		local raw_ann = raw_img[{ {}, {ny1, ny2}, {nx1, nx2} }]
 		-- view if you have torch's opencv installed
@@ -104,25 +124,13 @@ for bs=1, #anns, opt.batch_size do
 		ib = ib+1
 	end
 	-- extract batch feats
-	ann_feats[{ {bs, be}, {} }] = cnn_fc7:forward(raw_anns):float()
+	--ann_feats[{ {bs, be}, {} }] = cnn_fc7:forward(raw_anns):float()
+    resnet_model:forward(raw_anns):float()
+    
+    local output = resnet_model:get(13).output:float()
+    
+    ann_feats[{ {bs, be}, {} }] = output
 	print(string.format('%s/%s done.', be, #anns))
 end
 feats:write('ann_feats', ann_feats:float())
 print(string.format('ann_feats.h5 extracted in %s', feats_folder))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

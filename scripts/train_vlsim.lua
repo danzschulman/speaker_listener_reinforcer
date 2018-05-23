@@ -139,8 +139,9 @@ local best_score
 if string.len(opt.start_from) > 0 then
 else
 	-- create visual encoder
-	local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
-	protos.vis_encoder = net_utils.VisualEncoder(cnn_raw, opt)
+	--local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
+    local resnet_model = torch.load('resnet-200.t7'):cuda()
+	protos.vis_encoder = net_utils.VisualEncoder(resnet_model, opt)
 
 	-- create language encoder, which shares we's parameters and gradParams
 	local we = nn.LookupTableMaskZero(loader:getVocabSize()+1, opt.word_encoding_size)  -- vocab_size+1 as 0 used in LangEncoder

@@ -156,8 +156,9 @@ if string.len(opt.start_from) > 0 then
 	protos = checkpoint.protos
 else
 	-- create visual encoder
-	local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
-	protos.vis_encoder = net_utils.VisualEncoder(cnn_raw, opt)
+	--local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
+    local resnet_model = torch.load('resnet-200.t7'):cuda()
+	protos.vis_encoder = net_utils.VisualEncoder(resnet_model, opt)
 		
 	-- create word embedding of size vocab_size+2, 0 used in LangEncoder and Mp1 used in LanguageModel
 	protos.we = nn.LookupTableMaskZero(loader:getVocabSize()+1, opt.word_encoding_size)

@@ -12,6 +12,7 @@ local net_utils = require 'misc.net_utils'
 -- cuda
 require 'cutorch'
 require 'cunn'
+local t = require 'misc.transforms'
 
 ------------------------------------------------------------------------------------------
 -- prepare data
@@ -38,11 +39,12 @@ cutorch.setDevice(opt.gpuid + 1) -- note +1 because lua is 1-indexed
 local cudnn = require 'cudnn'
 cudnn.fastest, cudnn.benchmark = true, true
 -- load truncated cnn
-local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
-local cnn_fc7 = net_utils.build_cnn(cnn_raw)
-cnn_fc7:evaluate()
-cnn_fc7:cuda()
-
+--local cnn_raw = loadcaffe.load(opt.cnn_proto, opt.cnn_model, 'cudnn')
+--local cnn_fc7 = net_utils.build_cnn(cnn_raw)
+--cnn_fc7:evaluate()
+--cnn_fc7:cuda()
+local resnet_model = torch.load('resnet-200.t7'):cuda()
+resnet_model:evaluate()
 ------------------------------------------------------------------------------------------
 -- extract img_feats
 ------------------------------------------------------------------------------------------
@@ -70,7 +72,7 @@ local feats = hdf5.open(feats_folder .. '/img_feats.h5', 'w')
 
 -- extract
 local images = loader.images
-local img_feats = torch.zeros(#images, 4096):float()
+local img_feats = torch.zeros(#images, 2048):float()
 
 for bs=1, #images, opt.batch_size do
 	local be = math.min(bs+opt.batch_size-1, #images)
@@ -85,7 +87,21 @@ for bs=1, #images, opt.batch_size do
 		local file_name = images[ix]['file_name']
 		local img_path = path.join(IMAGE_DIR, file_name)
 		-- make range (1-255)
-		local raw_img = image.load(img_path) * 255
+		--local raw_img = image.load(img_path) * 255
+        local raw_img = image.load(img_path, 3, 'float')
+        
+        local meanstd = {
+           mean = { 0.485, 0.456, 0.406 },
+           std = { 0.229, 0.224, 0.225 },
+        }
+
+        local transform = t.Compose{
+           --t.Scale(256),
+           t.ColorNormalize(meanstd),
+           --t.CenterCrop(224),
+        }
+        raw_img = transform(raw_img)
+        
 		-- view if you have torch's opencv installed
 		if opt.view == 1 then utils.viewRawImg(raw_img) end
 		-- feed into batch
@@ -94,7 +110,14 @@ for bs=1, #images, opt.batch_size do
 	end
 
 	-- extract feats
-	img_feats[{ {bs, be}, {} }] = cnn_fc7:forward(raw_imgs):float()
+	--img_feats[{ {bs, be}, {} }] = cnn_fc7:forward(raw_imgs):float()
+    
+    resnet_model:forward(raw_imgs):float()
+    
+    local output = resnet_model:get(13).output:float()
+    
+    img_feats[{ {bs, be}, {} }] = output
+    
 	print(string.format('%s/%s done.', be, #images))
 end
 feats:write('img_feats', img_feats:float())
