@@ -4,6 +4,8 @@ This fork is part of the work of Dan Schulman's Thesis that can be found [here](
 
 In this work, I improved the original network by replacing the original visual encoder (VGG) with a better one (ResNet).
 
+I used (Facebook pretained model: resnet-200.t7)[https://github.com/facebook/fb.resnet.torch/tree/master/pretrained].
+
 # Original README
 
 Torch implementation of CVPR 2017's referring expression paper "A Joint Speaker-Listener-Reinforcer Model for Referring Expressions"
